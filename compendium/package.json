@@ -298,11 +298,8 @@
     "expand-brackets": "^2.1.4",
     "expect": "^24.9.0",
     "express": "^4.17.1",
-
     "fibers": "^4.0.2",
     "mongo": "^0.1.0",
-    "mongodb": "^3.4.1",
-    "mongoose": "^5.8.3",
     "mongoose-data-seed": "^2.1.6",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
@@ -310,8 +307,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
     "sass": "^1.24.0",
-    "typescript": "^3.7.4"
-
+    "typescript": "^3.7.4",
     "ext": "^1.4.0",
     "extend": "^3.0.2",
     "extend-shallow": "^3.0.2",
