@@ -2,15 +2,15 @@ import React from "react";
 import Thumbnail from "../Thumbnail";
 import { Container, Row, Col } from "../Grid";
 
-// Exporting both RecipeList and RecipeListItem from this file
+// Exporting both DataList and DataListItem from this file
 
-// RecipeList renders a bootstrap list item
-export function RecipeList({ children }) {
+// DataList renders a bootstrap list item
+export function DataList({ children }) {
   return <ul className="list-group">{children}</ul>;
 }
 
-// RecipeListItem renders a bootstrap list item containing data from the recipe api call
-export function RecipeListItem({
+// DataListItem renders a bootstrap list item containing data from the recipe api call
+export function DataListItem({
   thumbnail = "https://placehold.it/300x300",
   title,
   ingredients,
