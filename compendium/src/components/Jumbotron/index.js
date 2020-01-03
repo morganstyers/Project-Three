@@ -1,13 +1,13 @@
 import React from "react";
 import "./style.css";
+import 'typeface-roboto';
+
 
 function Jumbotron() {
   return (
     <div className="jumbotron text-center">
       <h1>Compendium</h1>
-      <a target="_blank" rel="noopener noreferrer" href="http://www.recipepuppy.com/about/api/">
-        Keep track of your collections
-      </a>
+       <h5> Keep track of your collections </h5>
     </div>
   );
 }

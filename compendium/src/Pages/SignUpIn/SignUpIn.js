@@ -56,7 +56,6 @@ class SignUpIn extends Component {
                     </Col>
                     
                   </Row>
-                  <Col size="xs-3 sm-2">
                       <Button
                         onClick={this.handleFormSubmit}
                         type="success"
@@ -64,8 +63,7 @@ class SignUpIn extends Component {
                       >
                         Login
                       </Button>
-                    </Col>
-                    <Col size="xs-3 sm-2">
+
                       <Button
                         onClick={this.handleFormSubmit}
                         type="success"
@@ -73,7 +71,6 @@ class SignUpIn extends Component {
                       >
                         Register
                       </Button>
-                    </Col>
                 </Container>
               </form>
             </Col>
