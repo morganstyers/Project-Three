@@ -49,88 +49,6 @@ const useStyles = makeStyles(theme => ({
 export default function SignIn() {
   const classes = useStyles();
 
-<<<<<<< HEAD
-class SignUpIn extends Component {
-  state = {
-    email: "",
-    password: ""
-  };
-
-  handleInputChange = event => {
-    // Getting the value and name of the input which triggered the change
-    let value = event.target.value;
-    const name = event.target.name;
-
-    if (name === "password") {
-      value = value.substring(0, 15);
-    }
-    // Updating the input's state
-    this.setState({
-      [name]: value
-    });
-  };
-
-  handleFormSubmit = event => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    event.preventDefault();
-    if (!this.state.email || !this.state.password) {
-      alert("Fill out your email addresss and password please!");
-    } else if (this.state.password.length < 6) {
-      alert(
-        `Choose a more secure password ${this.state.email}`
-      );
-    } else {
-      alert(`Hello ${this.state.email}`);
-    }
-
-    this.setState({
-      email: "",
-      password: ""
-    });
-  };
-  render() {
-    return (
-      <div>
-        {/* <Nav /> */}
-        <Jumbotron />
-        <Container>
-          <Row>
-            <Col size="md-12">
-              <form>
-                <Container>
-                  <Row>
-                    <Col size="xs-9 sm-10">
-                      <Input
-                        name="email"
-                        value={this.state.handleInputChange}
-                        type="email"
-                        onChange={this.handleInputChange}
-                        placeholder="email address"
-                      />
-                      
-                      <Input
-                        name="password"
-                        value={this.state.password}
-                        onChange={this.handleInputChange}
-                        type="password"
-                        placeholder="password"
-                        input type={"password"}
-                      />
-                    </Col>
-                      
-                  </Row>
-                      <Button
-                        onClick={this.handleFormSubmit}
-                        type="success"
-                        className="input-lg"
-                      >
-                        Login
-                      </Button>
-                      </Container>
-                   
-
-=======
->>>>>>> fbf11b4d1ca4bafd6a2931edf29cc1c21c5c2fbe
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -197,10 +115,4 @@ class SignUpIn extends Component {
     </Container>
     
   );
-<<<<<<< HEAD
-
-  
 }
-=======
-}
->>>>>>> fbf11b4d1ca4bafd6a2931edf29cc1c21c5c2fbe
