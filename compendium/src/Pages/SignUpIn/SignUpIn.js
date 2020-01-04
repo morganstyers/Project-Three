@@ -18,7 +18,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Compendium
+      Compendium
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -49,6 +49,7 @@ const useStyles = makeStyles(theme => ({
 export default function SignIn() {
   const classes = useStyles();
 
+<<<<<<< HEAD
 class SignUpIn extends Component {
   state = {
     email: "",
@@ -128,6 +129,8 @@ class SignUpIn extends Component {
                       </Container>
                    
 
+=======
+>>>>>>> fbf11b4d1ca4bafd6a2931edf29cc1c21c5c2fbe
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -181,7 +184,7 @@ class SignUpIn extends Component {
               </Link>
             </Grid>
             <Grid item>
-              <Link href={{}} variant="body2">
+              <Link href="#" variant="body2">
                 {"Don't have an account? Sign Up"}
               </Link>
             </Grid>
@@ -194,6 +197,10 @@ class SignUpIn extends Component {
     </Container>
     
   );
+<<<<<<< HEAD
 
   
 }
+=======
+}
+>>>>>>> fbf11b4d1ca4bafd6a2931edf29cc1c21c5c2fbe
