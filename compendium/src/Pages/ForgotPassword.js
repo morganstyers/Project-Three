@@ -71,8 +71,8 @@ export default function ForgotPassword() {
                             autoComplete="email"
                             autoFocus
                           />
-                         
-                          <Button 
+                         <Link to="/PasswordSent">
+                          <Button renderAs="button"
                             type="submit"
                             fullWidth
                             variant="contained"
@@ -80,7 +80,7 @@ export default function ForgotPassword() {
                             className={classes.submit}
                           >
                             Send Password
-          </Button>
+          </Button></Link>
           <Grid container>
             <Grid item xs>
               <Link to="/" variant="body2">

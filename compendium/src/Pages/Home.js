@@ -1,9 +1,14 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-
+import Jumbotron from "../components/Jumbotron/index"
+import Input from "../components/Input/index"
+import { Divider } from "@material-ui/core";
 const Home = () => {
     return (
+        <div>
+        <Jumbotron />
         <h2>Here is where we can enter in our collections</h2>
+        <Input />
+        </div>
     )
 }
 
