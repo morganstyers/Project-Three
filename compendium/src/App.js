@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       {/* <Nav /> */}
-     {/* <SignUpIn />*/}
+      <SignUpIn />
       <SignIn/>
     </div>
   );
