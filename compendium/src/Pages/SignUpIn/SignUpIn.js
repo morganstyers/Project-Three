@@ -2,33 +2,49 @@ import React, { Component } from "react";
 import Jumbotron from "../../components/Jumbotron";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
-import API from "../../utils/API";
+// import API from "../../utils/API";
 // import { RecipeList, RecipeListItem } from "../components/RecipeList";
 import { Container, Row, Col } from "../../components/Grid";
 
 class SignUpIn extends Component {
   state = {
-    recipes: [],
-    recipeSearch: ""
+    email: "",
+    password: ""
   };
 
   handleInputChange = event => {
-    // Destructure the name and value properties off of event.target
-    // Update the appropriate state
-    const { name, value } = event.target;
+    // Getting the value and name of the input which triggered the change
+    let value = event.target.value;
+    const name = event.target.name;
+
+    if (name === "password") {
+      value = value.substring(0, 15);
+    }
+    // Updating the input's state
     this.setState({
       [name]: value
     });
   };
 
   handleFormSubmit = event => {
-    // When the form is submitted, prevent its default behavior, get recipes update the recipes state
+    // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
-    API.getRecipes(this.state.recipeSearch)
-      .then(res => this.setState({ recipes: res.data }))
-      .catch(err => console.log(err));
-  };
+    if (!this.state.email || !this.state.password) {
+      alert("Fill out your email address and password please!");
+    } else if (this.state.password.length < 6) {
+      alert(
+        `Choose a more secure password ${this.state.firstName} ${this.state
+          .lastName}`
+      );
+    } else {
+      alert(`Hello ${this.state.email}`);
+    }
 
+    this.setState({
+      email: "",
+      password: ""
+    });
+  };
   render() {
     return (
       <div>
@@ -42,15 +58,17 @@ class SignUpIn extends Component {
                   <Row>
                     <Col size="xs-9 sm-10">
                       <Input
-                        name="username"
-                        value={this.state.recipeSearch}
+                        name="email"
+                        value={this.state.handleInputChange}
+                        type="email"
                         onChange={this.handleInputChange}
                         placeholder="email address"
                       />
                       <Input
                         name="password"
-                        value={this.state.recipeSearch}
+                        value={this.state.password}
                         onChange={this.handleInputChange}
+                        type="password"
                         placeholder="password"
                       />
                     </Col>
