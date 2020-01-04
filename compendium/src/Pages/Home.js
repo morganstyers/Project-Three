@@ -36,6 +36,7 @@ Account        </a>
 </nav>
         <Jumbotron />
         <h2>You have no collections. Would you like to create a one?</h2>
+        <br/>
         <button id="create" type="button" class="btn btn-dark" data-toggle="modal" data-target="#lost">
        Create Collection
       </button>
