@@ -1,10 +1,10 @@
 import React from "react";
 import Jumbotron from "../components/Jumbotron/index"
-import Input from "../components/Input/index"
+import Input from "../components/Input/index";
+import './hStyle.css';
 import { Divider } from "@material-ui/core";
 const Home = () => {
     return (
-        
         <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Compendium</a>
@@ -35,8 +35,11 @@ Account        </a>
   </div>
 </nav>
         <Jumbotron />
-        <h2>Here is where we can enter in our collections</h2>
-        <Input />
+        <h2>You have no collections. Would you like to create a one?</h2>
+        <button id="create" type="button" class="btn btn-dark" data-toggle="modal" data-target="#lost">
+       Create Collection
+      </button>
+      <Input />
         </div>
     )
 }
