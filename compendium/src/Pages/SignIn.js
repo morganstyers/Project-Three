@@ -18,7 +18,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Compendium
+      Compendium
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -49,82 +49,7 @@ const useStyles = makeStyles(theme => ({
 export default function SignIn() {
   const classes = useStyles();
 
-  class SignUpIn extends Component {
-    state = {
-      email: "",
-      password: ""
-    };
-
-    handleInputChange = event => {
-      // Getting the value and name of the input which triggered the change
-      let value = event.target.value;
-      const name = event.target.name;
-
-      if (name === "password") {
-        value = value.substring(0, 15);
-      }
-      // Updating the input's state
-      this.setState({
-        [name]: value
-      });
-    };
-
-    handleFormSubmit = event => {
-      // Preventing the default behavior of the form submit (which is to refresh the page)
-      event.preventDefault();
-      if (!this.state.email || !this.state.password) {
-        alert("Fill out your email addresss and password please!");
-      } else if (this.state.password.length < 6) {
-        alert(
-          `Choose a more secure password ${this.state.email}`
-        );
-      } else {
-        alert(`Hello ${this.state.email}`);
-      }
-
-      this.setState({
-        email: "",
-        password: ""
-      });
-    };
-    render() {
-      return (
-        <div>
-          {/* <Nav /> */}
-          <Jumbotron />
-          <Container>
-            <Row>
-              <Col size="md-12">
-                <form>
-                  <Container>
-                    <Row>
-                      <Col size="xs-9 sm-10">
-                        <Input
-                          name="email"
-                          value={this.state.handleInputChange}
-                          type="email"
-                          onChange={this.handleInputChange}
-                          placeholder="email address"
-                        />
-                        <Input
-                          name="password"
-                          value={this.state.password}
-                          onChange={this.handleInputChange}
-                          type="password"
-                          placeholder="password"
-                        />
-                      </Col>
-
-                    </Row>
-                    <Button
-                      onClick={this.handleFormSubmit}
-                      type="success"
-                      className="input-lg"
-                    >
-                      Login
-                      </Button>
-
-               return (
+  return (
     <Container component="main" maxWidth="xs">
                       <CssBaseline />
                       <div className={classes.paper}>
@@ -170,24 +95,23 @@ export default function SignIn() {
                           >
                             Sign In
           </Button>
-                          <Grid container>
-                            <Grid item xs>
-                              <Link href="#" variant="body2">
-                                Forgot password?
+          <Grid container>
+            <Grid item xs>
+              <Link href="#" variant="body2">
+                Forgot password?
               </Link>
-                            </Grid>
-                            <Grid item>
-                              <Link href={{}} variant="body2">
-                                {"Don't have an account? Sign Up"}
-                              </Link>
-                            </Grid>
-                          </Grid>
-                        </form>
-                      </div>
-                      <Box mt={8}>
-                        <Copyright />
-                      </Box>
-                    </Container>
-                    
-                    );
-                  }
+            </Grid>
+            <Grid item>
+              <Link href="#" variant="body2">
+                {"Don't have an account? Sign Up"}
+              </Link>
+            </Grid>
+          </Grid>
+        </form>
+      </div>
+      <Box mt={8}>
+        <Copyright />
+      </Box>
+    </Container>
+  );
+}
