@@ -1,6 +1,6 @@
 import React from "react";
 import Jumbotron from "../components/Jumbotron/index"
-import Input from "../components/Input/index"
+import Input from "../components/ItemForm/index"
 import { Divider } from "@material-ui/core";
 const Home = () => {
     return (
