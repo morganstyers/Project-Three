@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Jumbotron from "../../components/Jumbotron";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
-// import API from "../../utils/API";
-// import { RecipeList, RecipeListItem } from "../components/RecipeList";
+import API from "../../utils/API";
+//import { DataList, DataListItem } from "../../components/RecipeList";
 import { Container, Row, Col } from "../../components/Grid";
 
 class SignUpIn extends Component {
@@ -27,18 +27,12 @@ class SignUpIn extends Component {
   };
 
   handleFormSubmit = event => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
+
     event.preventDefault();
-    if (!this.state.email || !this.state.password) {
-      alert("Fill out your email address and password please!");
-    } else if (this.state.password.length < 6) {
-      alert(
-        `Choose a more secure password ${this.state.firstName} ${this.state
-          .lastName}`
-      );
-    } else {
-      alert(`Hello ${this.state.email}`);
-    }
+    API.getData(this.state.dataSearch)
+      .then(res => this.setState({ data: res.data }))
+      .catch(err => console.log(err));
+  };
 
     this.setState({
       email: "",
@@ -74,7 +68,6 @@ class SignUpIn extends Component {
                     </Col>
                     
                   </Row>
-                  <Col size="xs-3 sm-2">
                       <Button
                         onClick={this.handleFormSubmit}
                         type="success"
@@ -82,8 +75,7 @@ class SignUpIn extends Component {
                       >
                         Login
                       </Button>
-                    </Col>
-                    <Col size="xs-3 sm-2">
+
                       <Button
                         onClick={this.handleFormSubmit}
                         type="success"
@@ -91,20 +83,19 @@ class SignUpIn extends Component {
                       >
                         Register
                       </Button>
-                    </Col>
                 </Container>
               </form>
             </Col>
           </Row>
           {/* <Row>
             <Col size="xs-12">
-              {!this.state.recipes.length ? (
-                <h1 className="text-center">No Recipes to Display</h1>
+              {!this.state.data.length ? (
+                <h1 className="text-center">No data to Display</h1>
               ) : (
-                <RecipeList>
-                  {this.state.recipes.map(recipe => {
+                <DataList>
+                  {this.state.data.map(recipe => {
                     return (
-                      <RecipeListItem
+                      <DataListItem
                         key={recipe.title}
                         title={recipe.title}
                         href={recipe.href}
@@ -113,7 +104,7 @@ class SignUpIn extends Component {
                       />
                     );
                   })}
-                </RecipeList>
+                </DataList>
               )}
             </Col>
           </Row> */}
