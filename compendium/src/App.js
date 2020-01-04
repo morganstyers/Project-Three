@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 // import Nav from "./components/Nav";
-
 import {
   BrowserRouter as Router,
   Route,
@@ -8,7 +7,6 @@ import {
   // Link,
   Redirect
 } from "react-router-dom";
-
 //Pages
 import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
