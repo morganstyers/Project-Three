@@ -27,12 +27,17 @@ class SignUpIn extends Component {
   };
 
   handleFormSubmit = event => {
-
+    // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
-    API.getData(this.state.dataSearch)
-      .then(res => this.setState({ data: res.data }))
-      .catch(err => console.log(err));
-  };
+    if (!this.state.email || !this.state.password) {
+      alert("Fill out your email addresss and password please!");
+    } else if (this.state.password.length < 6) {
+      alert(
+        `Choose a more secure password ${this.state.email}`
+      );
+    } else {
+      alert(`Hello ${this.state.email}`);
+    }
 
     this.setState({
       email: "",
