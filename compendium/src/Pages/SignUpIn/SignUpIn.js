@@ -106,6 +106,7 @@ class SignUpIn extends Component {
                         onChange={this.handleInputChange}
                         placeholder="email address"
                       />
+                      
                       <Input
                         name="password"
                         value={this.state.password}
@@ -115,7 +116,7 @@ class SignUpIn extends Component {
                         input type={"password"}
                       />
                     </Col>
-                    
+                      
                   </Row>
                       <Button
                         onClick={this.handleFormSubmit}
@@ -124,6 +125,8 @@ class SignUpIn extends Component {
                       >
                         Login
                       </Button>
+                      </Container>
+                   
 
   return (
     <Container component="main" maxWidth="xs">
@@ -189,5 +192,8 @@ class SignUpIn extends Component {
         <Copyright />
       </Box>
     </Container>
+    
   );
+
+  
 }
