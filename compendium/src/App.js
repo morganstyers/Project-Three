@@ -5,13 +5,15 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Link,
+  // Link,
   Redirect
 } from "react-router-dom";
 
 //Pages
 import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
+import Home from "./Pages/Home";
+import ForgotPassword from "./Pages/ForgotPassword";
 import NotFoundPage from "./Pages/404";
 
 class App extends Component {
@@ -20,7 +22,9 @@ class App extends Component {
     <Router> 
         <Switch>
           <Route exact path="/" component={SignIn} />
-          <Route path="/SignUp" component={SignUp} />
+          <Route exact path="/SignUp" component={SignUp} />
+          <Route exact path="/ForgotPassword" component={ForgotPassword} />
+          <Route exact path="/Home" component={Home} />
           <Route exact path="/404" component={NotFoundPage} />
           <Redirect to="/404"/>
         </Switch>

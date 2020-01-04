@@ -3,8 +3,7 @@ import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
+// import FormControlLabel from '@material-ui/core/FormControlLabel';
 // import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
@@ -47,7 +46,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function SignIn() {
+export default function ForgotPassword() {
   const classes = useStyles();
 
   return (
@@ -58,7 +57,7 @@ export default function SignIn() {
                           <LockOutlinedIcon />
                         </Avatar>
                         <Typography component="h1" variant="h5">
-                          Sign in
+                          Retrieve Password
         </Typography>
                         <form className={classes.form} noValidate>
                           <TextField
@@ -72,35 +71,20 @@ export default function SignIn() {
                             autoComplete="email"
                             autoFocus
                           />
-                          <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            name="password"
-                            label="Password"
-                            type="password"
-                            id="password"
-                            autoComplete="current-password"
-                          />
-                          <FormControlLabel
-                            control={<Checkbox value="remember" color="primary" />}
-                            label="Remember me"
-                          />
-                          <Link to="/Home">
-                          <Button renderAs="button"
+                         
+                          <Button 
                             type="submit"
                             fullWidth
                             variant="contained"
                             color="primary"
                             className={classes.submit}
                           >
-                            Sign In
-          </Button></Link>
+                            Send Password
+          </Button>
           <Grid container>
             <Grid item xs>
-              <Link to="/ForgotPassword" variant="body2">
-                Forgot password?
+              <Link to="/" variant="body2">
+                Sign In
               </Link>
             </Grid>
             <Grid item>
