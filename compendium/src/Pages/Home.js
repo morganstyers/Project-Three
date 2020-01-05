@@ -4,6 +4,8 @@ import Input from "../components/Input/index";
 import './hStyle.css';
 import { Divider } from "@material-ui/core";
 import ModalExample from "../components/Modal/ModalExample";
+import Typography from '@material-ui/core/Typography';
+import { Link } from "react-router-dom"
 
 const Home = () => {
 
@@ -49,6 +51,14 @@ Account        </a>
       <ModalExample buttonLabel="Create Collection" />
       </div>
       <Input />
+      <Typography variant="body2" color="textSecondary" align="center">
+      {'Copyright © '}
+      <Link color="inherit">
+      Compendium
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
         </div>
     )
 }
