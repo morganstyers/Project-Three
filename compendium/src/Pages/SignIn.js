@@ -17,15 +17,15 @@ import { Link } from "react-router-dom"
 function Copyright() {
   return (
     <div>
-      
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit">
-      Compendium
+
+      <Typography variant="body2" color="textSecondary" align="center">
+        {'Copyright © '}
+        <Link color="inherit">
+          Compendium
       </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
+        {new Date().getFullYear()}
+        {'.'}
+      </Typography>
     </div>
   );
 }
@@ -55,50 +55,50 @@ export default function SignIn() {
 
   return (
     <Container component="main" maxWidth="xs">
-                      <CssBaseline />
-                      <div className={classes.paper}>
-                        <Avatar className={classes.avatar}>
-                          <LockOutlinedIcon />
-                        </Avatar>
-                        <Typography component="h1" variant="h5">
-                          Sign in
+      <CssBaseline />
+      <div className={classes.paper}>
+        <Avatar className={classes.avatar}>
+          <LockOutlinedIcon />
+        </Avatar>
+        <Typography component="h1" variant="h5">
+          Sign in
         </Typography>
-                        <form className={classes.form} noValidate>
-                          <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            id="email"
-                            label="Email Address"
-                            name="email"
-                            autoComplete="email"
-                            autoFocus
-                          />
-                          <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            name="password"
-                            label="Password"
-                            type="password"
-                            id="password"
-                            autoComplete="current-password"
-                          />
-                          <FormControlLabel
-                            control={<Checkbox value="remember" color="primary" />}
-                            label="Remember me"
-                          />
-                          <Link to="/Home">
-                          <Button renderAs="button"
-                            type="submit"
-                            fullWidth
-                            variant="contained"
-                            color="primary"
-                            className={classes.submit}
-                          >
-                            Sign In
+        <form className={classes.form} noValidate>
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            id="email"
+            label="Email Address"
+            name="email"
+            autoComplete="email"
+            autoFocus
+          />
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            name="password"
+            label="Password"
+            type="password"
+            id="password"
+            autoComplete="current-password"
+          />
+          <FormControlLabel
+            control={<Checkbox value="remember" color="primary" />}
+            label="Remember me"
+          />
+          <Link to="/Home">
+            <Button renderAs="button"
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.submit}
+            >
+              Sign In
           </Button></Link>
           <Grid container>
             <Grid item xs>
