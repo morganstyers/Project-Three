@@ -2,7 +2,6 @@ import React from "react";
 import Jumbotron from "../components/Jumbotron/index"
 import Input from "../components/Input/index";
 import './hStyle.css';
-import { Divider } from "@material-ui/core";
 import ModalExample from "../components/Modal/ModalExample";
 import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom"
@@ -33,11 +32,6 @@ const Home = () => {
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="/Account" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Account        </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Manage Collections</a>
-                <a class="dropdown-item" href="#">Account Permissions</a>
-                <a class="dropdown-item" href="#">Delete Account</a>
-              </div>
             </li>
           </ul>
         </div>

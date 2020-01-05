@@ -17,7 +17,6 @@ import NotFoundPage from "./Pages/404";
 import aboutUs from "./Pages/About";
 import collections from './Pages/ Collections';
 import yourAccount from './Pages/Account'
-import { render } from "react-dom";
 
 class App extends Component {
   render() {
