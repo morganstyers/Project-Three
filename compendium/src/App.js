@@ -14,6 +14,9 @@ import Home from "./Pages/Home";
 import ForgotPassword from "./Pages/ForgotPassword";
 import PasswordSent from "./Pages/PasswordSent";
 import NotFoundPage from "./Pages/404";
+import aboutUs from "./Pages/About";
+import collections from './Pages/ Collections';
+import yourAccount from './Pages/Account'
 import { render } from "react-dom";
 
 class App extends Component {
@@ -32,6 +35,12 @@ class App extends Component {
           <Route exact path="/PasswordSent" component={PasswordSent} />
           <Route exact path="/Home" component={Home} />
           <Route exact path="/404" component={NotFoundPage} />
+          <Route exact path="/About" component={aboutUs} />
+          <Route exact path="/Collections" component={collections} />
+          <Route exact path="/Account" component={yourAccount} />
+
+
+
           <Redirect to="/404"/>
         </Switch>
       </Router>
