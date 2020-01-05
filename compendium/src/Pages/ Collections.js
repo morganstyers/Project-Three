@@ -3,6 +3,8 @@ import CollectionTable from './components/CollectionTable';
 import Form from './components/Form';
 import Message from './components/Message';
 import CollectionAPI from './CollectionAPI';
+import Typography from '@material-ui/core/Typography';
+import { Link } from "react-router-dom"
 
 class App extends React.Component{
     constructor(props){
@@ -142,10 +144,8 @@ class App extends React.Component{
     }
 }
 
-export default App;
-import React from "react";
-import Typography from '@material-ui/core/Typography';
-import { Link } from "react-router-dom"
+// export default App;
+
 
 
 const collections =() => {

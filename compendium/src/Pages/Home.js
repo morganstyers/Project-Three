@@ -1,6 +1,6 @@
 import React from "react";
 import Jumbotron from "../components/Jumbotron/index"
-import Input from "../components/Input/index";
+// import Input from "../components/Input/index";
 import './hStyle.css';
 import { Divider } from "@material-ui/core";
 import ModalExample from "../components/Modal/ModalExample";
@@ -50,7 +50,7 @@ Account        </a>
       <div style={styles}>
       <ModalExample buttonLabel="Create Collection" />
       </div>
-      <Input />
+      {/* <Input /> */}
       <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit">

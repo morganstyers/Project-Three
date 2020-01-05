@@ -1,3 +1,4 @@
+
 // import axios from "axios";
 
 export default {
@@ -31,3 +32,4 @@ export default {
               .then(data => data);
   }
 }
+export default Collection;
