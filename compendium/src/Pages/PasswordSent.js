@@ -55,10 +55,10 @@ export default function PasswordSent() {
                 <Typography component="h1" variant="h5">
                     Your password has been sent to the email provided.
                         <Grid >
-                            <Link to="/" variant="body2">
-                                Sign In
+                        <Link to="/" variant="body2">
+                            Sign In
                             </Link>
-                        </Grid>
+                    </Grid>
                 </Typography>
 
 
