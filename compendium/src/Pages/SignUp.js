@@ -113,14 +113,14 @@ export default function SignUp() {
             </Grid>
           </Grid>
           <Link to="/Home">
-          <Button renderAs="button"
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            className={classes.submit}
-          >
-            Sign Up
+            <Button renderAs="button"
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.submit}
+            >
+              Sign Up
           </Button></Link>
           <Grid container justify="flex-end">
             <Grid item>

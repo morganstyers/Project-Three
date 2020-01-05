@@ -18,7 +18,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-      Compendium
+        Compendium
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -51,35 +51,35 @@ export default function ForgotPassword() {
 
   return (
     <Container component="main" maxWidth="xs">
-                      <CssBaseline />
-                      <div className={classes.paper}>
-                        <Avatar className={classes.avatar}>
-                          <LockOutlinedIcon />
-                        </Avatar>
-                        <Typography component="h1" variant="h5">
-                          Retrieve Password
+      <CssBaseline />
+      <div className={classes.paper}>
+        <Avatar className={classes.avatar}>
+          <LockOutlinedIcon />
+        </Avatar>
+        <Typography component="h1" variant="h5">
+          Retrieve Password
         </Typography>
-                        <form className={classes.form} noValidate>
-                          <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            id="email"
-                            label="Email Address"
-                            name="email"
-                            autoComplete="email"
-                            autoFocus
-                          />
-                         <Link to="/PasswordSent">
-                          <Button renderAs="button"
-                            type="submit"
-                            fullWidth
-                            variant="contained"
-                            color="primary"
-                            className={classes.submit}
-                          >
-                            Send Password
+        <form className={classes.form} noValidate>
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            id="email"
+            label="Email Address"
+            name="email"
+            autoComplete="email"
+            autoFocus
+          />
+          <Link to="/PasswordSent">
+            <Button renderAs="button"
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.submit}
+            >
+              Send Password
           </Button></Link>
           <Grid container>
             <Grid item xs>
