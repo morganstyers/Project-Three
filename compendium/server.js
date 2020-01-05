@@ -1,8 +1,11 @@
 const express = require("express");
-
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
+const bodyParser = require('body-parser');
+const cors = require('cors');
+
+
 const PORT = process.env.PORT || 3001;
 
 // Define middleware here
@@ -18,6 +21,21 @@ app.use(routes);
 // // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/compendiumdb");
 
+
+
+app.use(cors());
+app.use(bodyParser.json());
+
+init();
+
+function init() {
+    if (mongoDb.isConnected()) {
+      app.listen(3001, '127.0.0.1');
+    }
+    else {
+      console.log('error');
+    }
+}
 
 // Start the API server
 app.listen(PORT, function() {
