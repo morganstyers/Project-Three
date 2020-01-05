@@ -1,13 +1,22 @@
 import React from "react";
 import Jumbotron from "../components/Jumbotron/index"
-import Input from "../components/ItemForm/index"
+import Input from "../components/Input/index";
+import './hStyle.css';
 import { Divider } from "@material-ui/core";
+import ModalExample from "../components/Modal/ModalExample";
+import Typography from '@material-ui/core/Typography';
+import { Link } from "react-router-dom"
+
 const Home = () => {
+
+    const styles = {
+        fontFamily: "sans-serif",
+        textAlign: "center"
+      };
     return (
-        
         <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Compendium</a>
+  <a class="navbar-brand" href="/">Compendium</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -35,8 +44,21 @@ Account        </a>
   </div>
 </nav>
         <Jumbotron />
-        <h2>Here is where we can enter in our collections</h2>
-        <Input />
+        <h2>You have no collections. Would you like to create a one?</h2>
+        <br/>
+      
+      <div style={styles}>
+      <ModalExample buttonLabel="Create Collection" />
+      </div>
+      <Input />
+      <Typography variant="body2" color="textSecondary" align="center">
+      {'Copyright © '}
+      <Link color="inherit">
+      Compendium
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
         </div>
     )
 }
