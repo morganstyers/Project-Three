@@ -3,6 +3,7 @@ import Jumbotron from "../components/Jumbotron/index"
 import Input from "../components/Input/index";
 import './hStyle.css';
 import { Divider } from "@material-ui/core";
+
 const Home = () => {
     return (
         <div>
@@ -37,9 +38,6 @@ Account        </a>
         <Jumbotron />
         <h2>You have no collections. Would you like to create a one?</h2>
         <br/>
-        <button id="create" type="button" class="btn btn-dark" data-toggle="modal" data-target="#lost">
-       Create Collection
-      </button>
       <Input />
         </div>
     )
