@@ -14,10 +14,17 @@ import Home from "./Pages/Home";
 import ForgotPassword from "./Pages/ForgotPassword";
 import PasswordSent from "./Pages/PasswordSent";
 import NotFoundPage from "./Pages/404";
+import ModalExample from "./components/Modal/ModalExample";
+import { render } from "react-dom";
 
 class App extends Component {
   render() {
+    const styles = {
+      fontFamily: "sans-serif",
+      textAlign: "center"
+    };
   return (
+    <div style={styles}>
     <Router> 
         <Switch>
           <Route exact path="/" component={SignIn} />
@@ -29,6 +36,8 @@ class App extends Component {
           <Redirect to="/404"/>
         </Switch>
       </Router>
+      <ModalExample buttonLabel="Create Collection" />
+      </div>
   );    
   }  
   
