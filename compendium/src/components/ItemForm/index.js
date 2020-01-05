@@ -7,34 +7,42 @@ class ItemForm extends React.Component {
       category: '',
       item: '',
       quantity: null,
-      condition:,
+      condition: 'Excellent',
       description: '',
-      image:,
+      file: null,
     };
   }
  
   render() {
     return (
       <form>
+        <p>Enter Category:</p>
+      <input
+        type='text'
+        name='category'
+      />
       <p>Enter item:</p>
       <input
         type='text'
         name='item'
-        onChange={this.myChangeHandler}
       />
       <p>Enter quantity:</p>
       <input
-        type='text'
+        type='num'
         name='quantity'
-        onChange={this.myChangeHandler}
       />
-      <select value={this.state.mycar}>
+      <p>Enter condition:</p>
+      <select >
         <option value="Excellent">Excellent</option>
         <option value="Good">Good</option>
         <option value="Fair">Fair</option>
         <option value="Poor">Poor</option>
       </select>
-      
+      <p>Enter description:</p>
+      <textarea value={this.state.description} />
+      <p>Image Upload:</p>
+        <input type="file" onChange={this.onChange} />
+        <button type="submit">Upload</button>
       </form>
     );
   }
