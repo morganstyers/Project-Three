@@ -14,7 +14,6 @@ import Home from "./Pages/Home";
 import ForgotPassword from "./Pages/ForgotPassword";
 import PasswordSent from "./Pages/PasswordSent";
 import NotFoundPage from "./Pages/404";
-import ModalExample from "./components/Modal/ModalExample";
 import { render } from "react-dom";
 
 class App extends Component {
@@ -36,7 +35,6 @@ class App extends Component {
           <Redirect to="/404"/>
         </Switch>
       </Router>
-      <ModalExample buttonLabel="Create Collection" />
       </div>
   );    
   }  

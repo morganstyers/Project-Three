@@ -3,12 +3,18 @@ import Jumbotron from "../components/Jumbotron/index"
 import Input from "../components/Input/index";
 import './hStyle.css';
 import { Divider } from "@material-ui/core";
+import ModalExample from "../components/Modal/ModalExample";
 
 const Home = () => {
+
+    const styles = {
+        fontFamily: "sans-serif",
+        textAlign: "center"
+      };
     return (
         <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Compendium</a>
+  <a class="navbar-brand" href="/">Compendium</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -38,6 +44,10 @@ Account        </a>
         <Jumbotron />
         <h2>You have no collections. Would you like to create a one?</h2>
         <br/>
+      
+      <div style={styles}>
+      <ModalExample buttonLabel="Create Collection" />
+      </div>
       <Input />
         </div>
     )
