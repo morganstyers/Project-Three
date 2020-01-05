@@ -2,14 +2,9 @@ import React from "react";
 import Jumbotron from "../components/Jumbotron/index"
 import Input from "../components/Input/index";
 import './hStyle.css';
-import { Divider } from "@material-ui/core";
-<<<<<<< HEAD
-
-=======
 import ModalExample from "../components/Modal/ModalExample";
 import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom"
->>>>>>> f3f2a54367c121d708fe89893a9c940c4a051c70
 
 const Home = () => {
 
