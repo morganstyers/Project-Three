@@ -2,8 +2,13 @@ import React from "react";
 import Typography from '@material-ui/core/Typography';
 import RocksModal from "../components/Modal/RocksModal";
 import CoinsModal from "../components/Modal/CoinsModal";
+import AddModal from '../components/Modal/addModal'
 import { Link } from "react-router-dom";
 import './hStyle.css';
+import {
+    Card, Button, CardImg, CardTitle, CardText, CardGroup,
+    CardSubtitle, CardBody
+} from 'reactstrap';
 
 const collections = () => {
     return (
@@ -30,13 +35,44 @@ const collections = () => {
                     </ul>
                 </div>
             </nav>
-            <br/>
+            <br />
             <h2>these will be our collections</h2>
             <span>
-                <RocksModal id="rocks" buttonLabel="Rocks" />
-                <br />
-                <CoinsModal id="coins" buttonLabel="Coins" />
+                <CardGroup>
+                    <Card>
+                        <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" />
+                        <CardBody>
+                            <CardTitle>Card title</CardTitle>
+                            <CardSubtitle>Card subtitle</CardSubtitle>
+                            <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+                            <Button>Button</Button>
+                        </CardBody>
+                    </Card>
+                    <Card>
+                        <CardImg top width="100%" src="../images/rocks3.jpg" alt="Card image cap" />
+                        <CardBody>
+                            <CardTitle>Minerals</CardTitle>
+                            <CardSubtitle>Card subtitle</CardSubtitle>
+                            <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
+                            <AddModal id="rocks" buttonLabel="Add Mineral" />
+                            <RocksModal buttonLabel="View Collection"></RocksModal>
+                        </CardBody>
+                    </Card>
+                    <Card>
+                        <CardImg top width="100%" src="../images/2centfront.jpg" alt="Card image cap" />
+                        <CardBody>
+                            <CardTitle>Coins</CardTitle>
+                            <CardSubtitle>Card subtitle</CardSubtitle>
+                            <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
+                            <AddModal id="coins" buttonLabel="Add Coin" />
+                            <CoinsModal buttonLabel="View Collection"></CoinsModal>
+
+                        </CardBody>
+                    </Card>
+                </CardGroup>
+
             </span>
+            <br />
             <Typography variant="body2" color="textSecondary" align="center">
                 {'Copyright © '}
                 <Link color="inherit">

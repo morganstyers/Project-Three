@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import RockGallery from '../Carousel /RockGallery';
 import './style.css'
+
 class RocksModal extends React.Component {
   constructor(props) {
     super(props);
@@ -23,10 +25,9 @@ class RocksModal extends React.Component {
       <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
         <ModalHeader toggle={this.toggle}>Minerals</ModalHeader>
         <ModalBody>
-
+<RockGallery/>
           </ModalBody>
           <ModalFooter>
-
             <Button id="close" color="secondary" onClick={this.toggle}>
               Cancel
             </Button>

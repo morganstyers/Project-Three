@@ -1,23 +1,40 @@
 import React from 'react';
-import { Card } from 'reactstrap';
-function Account() {
-    return (
-        <span>
-        <Card style={{width: 300, marginLeft: 150, marginTop: 20 }} color="default">
-        AAAAAAAAAAAAAAAAAAAAAAAA
-        <hr/>
-        this will be mock account information, set profile pictures,
-    password, email, address, eventually card and shipping info as well as social media
-    <hr/>
-        </Card>
-            <Card style={{ marginRight: 20, marginLeft: 20, width: 500, marginTop: 20 }} color="default">
-            AAAAAAAAAAAAAAAAAAAAAAAA
-            <hr/>
-            this will be general information about your account and how to do things 
-            <hr/>
-            </Card>
-            </span>
-    )
-}
+import { Card, CardTitle, CardText, Row, Col } from 'reactstrap';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import WebIcon from '@material-ui/icons/Web';
+import { Jumbotron } from 'reactstrap';
 
+const Account = (props) => {
+    return (
+        <Row style={{ marginTop: 20 }}>
+            <Col sm="4">
+                <Card style={{ marginLeft: 120 }} body>
+                    <CardTitle> <AccountCircleIcon fontSize='large'></AccountCircleIcon> Hello, User!</CardTitle>
+                    <hr/>
+                    <CardText>
+                        <Jumbotron>
+                        <li>Icon</li>
+                        <li>First Name, Last Name.</li>
+                        <li>Username</li>
+                        <li>Address</li>
+                        <li>Info</li>
+                        <li>edit account info</li>
+                        </Jumbotron>
+                    </CardText>
+                </Card>
+            </Col>
+            <Col sm="6">
+                <Card body>
+                    <CardTitle> <WebIcon fontSize='large'></WebIcon>Your Account </CardTitle>
+                    <hr />
+                    <CardText>This is where collections go, users permissions, social media, e-commerce info etc </CardText>     
+                    <Jumbotron></Jumbotron>
+                  
+                </Card>
+            </Col>
+        </Row>
+            );
+        };
+        
+        
 export default Account;
