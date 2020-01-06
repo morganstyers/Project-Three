@@ -1,10 +1,10 @@
 import React from "react";
-import Jumbotron from "../components/Jumbotron/index"
+import Jumbotron from "../components/Jumbotron/index";
 import Input from "../components/Input/index";
 import './hStyle.css';
 import ModalExample from "../components/Modal/ModalExample";
 import Typography from '@material-ui/core/Typography';
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const styles = {
