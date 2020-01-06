@@ -1,6 +1,8 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom"
+import Account from '../components/Card/Account';
+
 
 const yourAccount = () => {
     return (
@@ -26,7 +28,8 @@ const yourAccount = () => {
                         </li>
                     </ul>
                 </div>
-            </nav>            <h2>This will be account info</h2>
+            </nav>
+           <Account/>
             <Typography variant="body2" color="textSecondary" align="center">
                 {'Copyright © '}
                 <Link color="inherit">
