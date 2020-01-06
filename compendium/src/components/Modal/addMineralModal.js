@@ -22,7 +22,7 @@ class AddModal extends React.Component {
             {this.props.buttonLabel}
           </Button>
           <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-            <ModalHeader toggle={this.toggle}>Minerals</ModalHeader>
+            <ModalHeader toggle={this.toggle}>New Mineral</ModalHeader>
             <ModalBody>
             <Form>
                 <FormGroup>
