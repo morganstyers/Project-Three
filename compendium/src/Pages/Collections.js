@@ -2,7 +2,8 @@ import React from "react";
 import Typography from '@material-ui/core/Typography';
 import RocksModal from "../components/Modal/RocksModal";
 import CoinsModal from "../components/Modal/CoinsModal";
-import AddModal from '../components/Modal/addModal'
+import AddModal from '../components/Modal/addMineralModal';
+import AddCoinModal from '../components/Modal/addCoinModal';
 import { Link } from "react-router-dom";
 import './hStyle.css';
 import {
@@ -64,7 +65,7 @@ const collections = () => {
                             <CardTitle>Coins</CardTitle>
                             <CardSubtitle>Card subtitle</CardSubtitle>
                             <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-                            <AddModal id="coins" buttonLabel="Add Coin" />
+                            <AddCoinModal id="coins" buttonLabel="Add Coin" />
                             <CoinsModal buttonLabel="View Collection"></CoinsModal>
 
                         </CardBody>
