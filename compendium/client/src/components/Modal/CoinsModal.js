@@ -25,7 +25,7 @@ class CoinsModal extends React.Component {
                     <ModalHeader toggle={this.toggle}>
                         Coins</ModalHeader>
                     <ModalBody>
-
+<CoinGallery></CoinGallery>
                     </ModalBody>
                     <ModalFooter>
                     <Button id="submit" color="primary" onClick={this.toggle}>

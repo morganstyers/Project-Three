@@ -56,6 +56,7 @@ const collections = () => {
                             <CardSubtitle>Card subtitle</CardSubtitle>
                             <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
                             <AddMineral id="rocks" buttonLabel="Add Mineral" />
+                            <br/>
                             <RocksModal buttonLabel="View Collection"></RocksModal>
                         </CardBody>
                     </Card>
@@ -66,6 +67,7 @@ const collections = () => {
                             <CardSubtitle>Card subtitle</CardSubtitle>
                             <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
                             <AddCoinModal id="coins" buttonLabel="Add Coin" />
+                            <br/>
                             <CoinsModal buttonLabel="View Collection"></CoinsModal>
 
                         </CardBody>

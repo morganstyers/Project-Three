@@ -103,7 +103,7 @@ function MyVerticallyCenteredModal(props) {
   
     return (
       <ButtonToolbar>
-        <Button variant="warning" onClick={() => setModalShow(true)}>
+        <Button style={{marginLeft: 135}} variant="warning" onClick={() => setModalShow(true)}>
      Add New Mineral
         </Button>
   
