@@ -2,7 +2,6 @@ import React from 'react';
 import {Card} from 'reactstrap';
 import MinCat from '../Card/mincat';
 import CoinCat from '../Card/coincat';
-import Nav from '../Nav/index';
 
 class Catalogue extends React.Component {
     constructor(props) {
