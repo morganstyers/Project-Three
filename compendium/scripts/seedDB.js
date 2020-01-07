@@ -5,43 +5,26 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://127.0.0.1:27017/compendiumdb"
+  "mongodb://localhost/reactreadinglist"
 );
 
-const bookSeed = [
+const rockSeed = [
   {
     category: "Rocks",
-    name: "Crystal",
-    quantity:"5",
-    condition:  "Great",
-    description: "Great",
-    image: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiR7amco_DmAhVDXK0KHYynC5cQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.quora.com%2FWhat-is-the-difference-between-minerals-and-crystals&psig=AOvVaw0n2hMCclprYN-IHR_1LUI0&ust=1578444791586356"
+    name: "Limestone",
+    quantity: "1",
+    condition: "Excellent",
+    description: "Super limey",
+    image: "./assets/images/limestone.jpeg"
   },
   {
     category: "Rocks",
-    name: "Crystal",
-    quantity:"",
-    condition:  "Great",
-    description: "Great",
-    image: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiR7amco_DmAhVDXK0KHYynC5cQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.quora.com%2FWhat-is-the-difference-between-minerals-and-crystals&psig=AOvVaw0n2hMCclprYN-IHR_1LUI0&ust=1578444791586356"
-  },
-  {
-    category: "Rocks",
-    name: "Crystal",
-    quantity:"",
-    condition:  "Great",
-    description: "Great",
-    image: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiR7amco_DmAhVDXK0KHYynC5cQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.quora.com%2FWhat-is-the-difference-between-minerals-and-crystals&psig=AOvVaw0n2hMCclprYN-IHR_1LUI0&ust=1578444791586356"
-  },
-  {
-    category: "Rocks",
-    name: "Crystal",
-    quantity:"",
-    condition:  "Great",
-    description: "Great",
-    image: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiR7amco_DmAhVDXK0KHYynC5cQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.quora.com%2FWhat-is-the-difference-between-minerals-and-crystals&psig=AOvVaw0n2hMCclprYN-IHR_1LUI0&ust=1578444791586356"
-  },
-  
+    name: "Bedrock",
+    quantity: "1",
+    condition: "Good",
+    description: "Yabba Dabba Doo",
+    image: "./assets/images/bedrock.jpeg"
+  }, 
 ];
 
 db.Rock
