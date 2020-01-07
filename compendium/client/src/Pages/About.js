@@ -1,7 +1,7 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom"
-// import Bio from '../../components/Card/bio';
+import Bio from '../../components/Card/bio';
 
 const aboutUs = () => {
     return (
