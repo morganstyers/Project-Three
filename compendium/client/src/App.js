@@ -1,13 +1,5 @@
 import React, { Component } from "react";
-// import Nav from "./components/Nav";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  // Link,
-  Redirect
-} from "react-router-dom";
-//Pages
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
 import Home from "./Pages/Home";
