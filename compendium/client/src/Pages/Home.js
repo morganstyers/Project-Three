@@ -1,6 +1,6 @@
 import React from "react";
 import Jumbotron from "../components/Jumbotron/index";
-import Input from "../components/Input/index";
+// import Input from "../components/Input/index";
 import './hStyle.css';
 import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom";
@@ -46,7 +46,7 @@ const Home = () => {
 <AddCollection id="cc" buttonLabel="Create Collection" />
 
       </div>
-      <Input />
+      {/* <Input /> */}
       <Typography variant="body2" color="textSecondary" align="center">
         {'Copyright © '}
         <Link color="inherit">
