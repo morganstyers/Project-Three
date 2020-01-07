@@ -1,17 +1,12 @@
 import React from "react";
-<<<<<<< HEAD:compendium/client/src/Pages/Home.js
-import Jumbotron from "../components/Jumbotron/index"
-// import Input from "../components/Input/index";
-=======
 import Jumbotron from "../components/Jumbotron/index";
-import Input from "../components/Input/index";
->>>>>>> cb53453e3b76da6e93c34b55e51b11ce92dd38c4:compendium/src/Pages/Home.js
+import Input from "../../components/Input/index";
 import './hStyle.css';
 import ModalExample from "../components/Modal/ModalExample";
 import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom";
 import { Button } from 'reactstrap';
-import AddCollection from '../components/Modal/addCollection';
+import AddCollection from '../../components/Modal/addCollection';
 
 const Home = () => {
   const styles = {
