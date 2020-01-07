@@ -103,8 +103,8 @@ function MyVerticallyCenteredModal(props) {
   
     return (
       <ButtonToolbar>
-        <Button style={{marginLeft: 605}} variant="warning" onClick={() => setModalShow(true)}>
-     Add New Collection
+        <Button style={{margin:2}} variant="warning" onClick={() => setModalShow(true)}>
+     Start New Collection
         </Button>
   
         <MyVerticallyCenteredModal
