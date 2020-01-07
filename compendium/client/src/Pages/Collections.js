@@ -4,6 +4,9 @@ import AddMineral from "../components/Modal/addMineralModal";
 import RocksModal from "../components/Modal/RocksModal";
 import CoinsModal from "../components/Modal/CoinsModal";
 import AddCoinModal from '../components/Modal/addCoinModal';
+import MinCollection from '../components/Modal/minShow';
+import CoinCollection from '../components/Modal/coinShow';
+
 import { Link } from "react-router-dom";
 
 import './hStyle.css';
@@ -11,6 +14,7 @@ import {
     Card, CardImg, CardTitle, CardText, CardGroup,
     CardSubtitle, CardBody
 } from 'reactstrap';
+import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 
 const collections = () => {
     return (
@@ -47,29 +51,32 @@ const collections = () => {
                             <CardTitle>Card title</CardTitle>
                             <CardSubtitle>Card subtitle</CardSubtitle>
                             <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-                      </CardBody>
+                        </CardBody>
                     </Card>
                     <Card>
                         <CardImg top width="100%" src="../images/rocks3.jpg" alt="Card image cap" />
                         <CardBody>
-                            <CardTitle>Minerals</CardTitle>
+                        <CardTitle><MinCollection buttonLabel="Minerals"></MinCollection></CardTitle>
                             <CardSubtitle>Card subtitle</CardSubtitle>
                             <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
+                            <ButtonToolbar>
                             <AddMineral id="rocks" buttonLabel="Add Mineral" />
-                            <br/>
+                            <br />
                             <RocksModal buttonLabel="Gallery"></RocksModal>
+                            </ButtonToolbar>
                         </CardBody>
                     </Card>
                     <Card>
                         <CardImg top width="100%" src="../images/2centfront.jpg" alt="Card image cap" />
                         <CardBody>
-                            <CardTitle>Coins</CardTitle>
+                            <CardTitle> 
+                                <CoinCollection buttonLabel="Coins"></CoinCollection>
+                            </CardTitle>
                             <CardSubtitle>Card subtitle</CardSubtitle>
                             <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-                            <AddCoinModal id="coins" buttonLabel="Add Coin" />
-                            <br/>
-                            <CoinsModal buttonLabel="Gallery"></CoinsModal>
-
+                            <ButtonToolbar>
+                                <AddCoinModal id="coins" buttonLabel="Add Coin" />
+                                <CoinsModal buttonLabel="Gallery"></CoinsModal></ButtonToolbar>
                         </CardBody>
                     </Card>
                 </CardGroup>
