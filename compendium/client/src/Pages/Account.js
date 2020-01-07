@@ -1,7 +1,7 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom"
-// import Account from '../../components/Card/Account';
+import Account from '../components/Card/Account';
 
 
 const yourAccount = () => {
@@ -29,7 +29,7 @@ const yourAccount = () => {
                     </ul>
                 </div>
             </nav>
-           
+           <Account></Account>
            <br/>
             <Typography variant="body2" color="textSecondary" align="center">
                 {'Copyright © '}
