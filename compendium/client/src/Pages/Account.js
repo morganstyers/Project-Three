@@ -3,7 +3,6 @@ import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom"
 import Account from '../components/Card/Account';
 
-
 const yourAccount = () => {
     return (
         <div>

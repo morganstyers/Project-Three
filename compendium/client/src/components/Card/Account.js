@@ -3,6 +3,8 @@ import { Card, CardTitle, CardText, Row, Col } from 'reactstrap';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import WebIcon from '@material-ui/icons/Web';
 import { Jumbotron } from 'reactstrap';
+import Catalogue from '../Catalogue/Catalogue'
+
 
 const Account = (props) => {
     return (
@@ -28,7 +30,8 @@ const Account = (props) => {
                     <CardTitle> <WebIcon fontSize='large'></WebIcon>Your Account </CardTitle>
                     <hr />
                     <CardText>This is where collections go, users permissions, social media, e-commerce info etc </CardText>     
-                    <Jumbotron></Jumbotron>
+                    <Jumbotron>
+                        <h5>Your Collections</h5><Catalogue/></Jumbotron>
                   
                 </Card>
             </Col>

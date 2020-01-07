@@ -7,11 +7,11 @@ function SelectACollection( ) {
                     <Label for="exampleSelect">Select</Label>
                     <Input type="select" name="select" id="exampleSelect">
                     <option placeholder='select'></option>
-                        <option className="art">Art</option>
-                        <option className='species'>Species</option>
-                        <option className="music">Music</option>
-                        <option className="books">Books</option>
-                        <option className="inventory">Inventory</option>
+                        <option className="Art">Art</option>
+                        <option className='Species'>Species</option>
+                        <option className="Music">Music</option>
+                        <option className="Books">Books</option>
+                        <option className="Inventory">Inventory</option>
                     </Input>
                 </Form>
             </FormGroup>
