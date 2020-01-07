@@ -1,13 +1,14 @@
 import React from "react";
 import Typography from '@material-ui/core/Typography';
+import AddMineral from "../components/Modal/addMineralModal";
 import RocksModal from "../components/Modal/RocksModal";
 import CoinsModal from "../components/Modal/CoinsModal";
-import AddModal from '../components/Modal/addMineralModal';
 import AddCoinModal from '../components/Modal/addCoinModal';
 import { Link } from "react-router-dom";
+
 import './hStyle.css';
 import {
-    Card, Button, CardImg, CardTitle, CardText, CardGroup,
+    Card, CardImg, CardTitle, CardText, CardGroup,
     CardSubtitle, CardBody
 } from 'reactstrap';
 
@@ -46,8 +47,7 @@ const collections = () => {
                             <CardTitle>Card title</CardTitle>
                             <CardSubtitle>Card subtitle</CardSubtitle>
                             <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-                            <Button>Button</Button>
-                        </CardBody>
+                      </CardBody>
                     </Card>
                     <Card>
                         <CardImg top width="100%" src="../images/rocks3.jpg" alt="Card image cap" />
@@ -55,7 +55,7 @@ const collections = () => {
                             <CardTitle>Minerals</CardTitle>
                             <CardSubtitle>Card subtitle</CardSubtitle>
                             <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
-                            <AddModal id="rocks" buttonLabel="Add Mineral" />
+                            <AddMineral id="rocks" buttonLabel="Add Mineral" />
                             <RocksModal buttonLabel="View Collection"></RocksModal>
                         </CardBody>
                     </Card>
