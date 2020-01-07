@@ -7,7 +7,7 @@ import ForgotPassword from "./Pages/ForgotPassword";
 import PasswordSent from "./Pages/PasswordSent";
 import NotFoundPage from "./Pages/404";
 import aboutUs from "./Pages/About";
-import collections from '../Pages/Collections';
+import collections from './Pages/Collections';
 import yourAccount from './Pages/Account'
 
 class App extends Component {

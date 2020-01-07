@@ -1,7 +1,7 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom"
-import Bio from '../../components/Card/bio';
+// import Bio from '../components/Card/bio';
 
 const aboutUs = () => {
     return (
@@ -31,7 +31,7 @@ const aboutUs = () => {
             <br/>
             <h2>We are compendium or whatever</h2>
             <hr/>
-            <Bio/>
+            
             <Typography variant="body2" color="textSecondary" align="center">
                 {'Copyright © '}
                 <Link color="inherit">

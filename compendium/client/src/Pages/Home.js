@@ -1,11 +1,11 @@
 import React from "react";
 import Jumbotron from "../components/Jumbotron/index";
-import Input from "../../components/Input/index";
+// import Input from "../components/Input/index";
 import './hStyle.css';
 import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom";
 import { Button } from 'reactstrap';
-import AddCollection from '../../components/Modal/addCollection';
+import AddCollection from '../components/Modal/addCollection';
 
 const Home = () => {
   const styles = {
