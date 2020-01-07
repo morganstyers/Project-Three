@@ -1,30 +1,25 @@
-import React from "react";
-import { Button, Modal, ModalHeader, ModalBody } from "reactstrap";
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import { Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-import './style.css';
-class AddCollection extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            modal: false
-        };
-        this.toggle = this.toggle.bind(this);
-    }
-    toggle() {
-        this.setState({
-            modal: !this.state.modal
-        });
-    }
-    render() {
-        return (
-            <div>
-            <Button color="warning" onClick={this.toggle}>
-            {this.props.buttonLabel}
-          </Button>
-          <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-            <ModalHeader toggle={this.toggle}> New Collection</ModalHeader>
-            <ModalBody>
-            <Form>
+
+import React from 'react';
+
+function MyVerticallyCenteredModal(props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+           Add New Collection
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <Form>
                 <FormGroup>
                     <Label for="exampleEmail">Email</Label>
                     <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
@@ -92,13 +87,34 @@ class AddCollection extends React.Component {
                         Check me out
         </Label>
                 </FormGroup>
-                <Button>Submit</Button>                <Button>Close</Button>
+                <Button>Submit</Button>  
 
             </Form>
-</ModalBody>
-</Modal>
-</div>
-        )
-    }
-}
-export default AddCollection;
+
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+  function AddCoinModel() {
+    const [modalShow, setModalShow] = React.useState(false);
+  
+    return (
+      <ButtonToolbar>
+        <Button style={{marginLeft: 605}} variant="warning" onClick={() => setModalShow(true)}>
+     Add New Collection
+        </Button>
+  
+        <MyVerticallyCenteredModal
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+        />
+      </ButtonToolbar>
+    );
+  }
+  
+
+
+  export default AddCoinModel;
