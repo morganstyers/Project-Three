@@ -4,7 +4,6 @@ import AddMineral from "../components/Modal/addMineralModal";
 import RocksModal from "../components/Modal/RocksModal";
 import CoinsModal from "../components/Modal/CoinsModal";
 import AddCoinModal from '../components/Modal/addCoinModal';
-import { Button } from 'reactstrap';
 
 import { Link } from "react-router-dom";
 
