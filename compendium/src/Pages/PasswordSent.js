@@ -1,12 +1,12 @@
 import React from 'react';
-import Avatar from '@material-ui/core/Avatar';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
+import Avatar from '../../node_modules/@material-ui/core/Avatar';
+import CssBaseline from '../../node_modules/@material-ui/core/CssBaseline';
+import Grid from '../../node_modules/@material-ui/core/Grid';
+import Box from '../../node_modules/@material-ui/core/Box';
+import LockOutlinedIcon from '../../node_modules/@material-ui/icons/LockOutlined';
+import Typography from '../../node_modules/@material-ui/core/Typography';
+import { makeStyles } from '../../node_modules/@material-ui/core/styles';
+import Container from '../../node_modules/@material-ui/core/Container';
 import { Link } from "react-router-dom"
 
 function Copyright() {
@@ -55,10 +55,10 @@ export default function PasswordSent() {
                 <Typography component="h1" variant="h5">
                     Your password has been sent to the email provided.
                         <Grid >
-                            <Link to="/" variant="body2">
-                                Sign In
+                        <Link to="/" variant="body2">
+                            Sign In
                             </Link>
-                        </Grid>
+                    </Grid>
                 </Typography>
 
 

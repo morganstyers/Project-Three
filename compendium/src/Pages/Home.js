@@ -3,7 +3,7 @@ import Jumbotron from "../components/Jumbotron/index"
 import Input from "../components/Input/index";
 import './hStyle.css';
 import ModalExample from "../components/Modal/ModalExample";
-import Typography from '@material-ui/core/Typography';
+import Typography from '../../node_modules/@material-ui/core/Typography';
 import { Link } from "react-router-dom"
 
 const Home = () => {
