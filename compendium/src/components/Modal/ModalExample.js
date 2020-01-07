@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import './style.css'
+import AddCollection from "./addCollection";
+
 class ModalExample extends React.Component {
   constructor(props) {
     super(props);
@@ -26,8 +28,8 @@ class ModalExample extends React.Component {
       <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
         <ModalHeader toggle={this.toggle}>Create One</ModalHeader>
         <ModalBody>
-This will be our input form
-          </ModalBody>
+         
+</ModalBody>
           <ModalFooter>
             <Button id="submit" color="warning" onClick={this.toggle}>
               Do Something

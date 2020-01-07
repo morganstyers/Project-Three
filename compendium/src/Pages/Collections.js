@@ -37,7 +37,7 @@ const collections = () => {
                 </div>
             </nav>
             <br />
-            <h2>these will be our collections</h2>
+            <h2>Your Collections</h2>
             <span>
                 <CardGroup>
                     <Card>
