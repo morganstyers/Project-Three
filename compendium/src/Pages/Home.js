@@ -2,7 +2,6 @@ import React from "react";
 import Jumbotron from "../components/Jumbotron/index";
 import Input from "../components/Input/index";
 import './hStyle.css';
-import ModalExample from "../components/Modal/ModalExample";
 import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom";
 import { Button } from 'reactstrap';
@@ -42,10 +41,10 @@ const Home = () => {
       <h2> See your existing collections or create a new one.</h2>
       <br/>
       <div style={styles}>
-        <span>        <Button style={{margin:2}} href='/Collections'>View Your Collections</Button>
+    <Button style={{margin:2}} href='/Collections'>View Your Collections</Button>
 <hr/>
-<AddCollection  buttonLabel="Create Collection" />
-</span>
+<AddCollection id="cc" buttonLabel="Create Collection" />
+
       </div>
       <Input />
       <Typography variant="body2" color="textSecondary" align="center">
