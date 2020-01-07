@@ -1,16 +1,16 @@
 import React from "react";
 import Jumbotron from "../components/Jumbotron/index";
-// import Input from "../components/Input/index";
 import './hStyle.css';
 import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom";
 import { Button } from 'reactstrap';
 import AddCollection from '../components/Modal/addCollection';
+import ButtonToolbar from 'react-bootstrap/ButtonToolbar'
 
 const Home = () => {
   const styles = {
     fontFamily: "sans-serif",
-    textAlign: "center"
+    
   };
   return (
     <div>
@@ -41,10 +41,13 @@ const Home = () => {
       <h2> See your existing collections or create a new one.</h2>
       <br/>
       <div style={styles}>
-    <Button style={{margin:2}} href='/Collections'>View Your Collections</Button>
-<hr/>
-<AddCollection id="cc" buttonLabel="Create Collection" />
+      <ButtonToolbar style={{marginLeft: 500, textAlign:"center"}}>
+  <Button style={{margin:2}} href='/Collections'>View Your Collections</Button>
+    <AddCollection id="cc" buttonLabel="Create Collection" />
+    </ButtonToolbar>
 
+
+<hr/>
       </div>
       {/* <Input /> */}
       <Typography variant="body2" color="textSecondary" align="center">
