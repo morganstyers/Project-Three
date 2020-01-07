@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import './style.css'
+import AddCollection from "./addCollection";
+
 class ModalExample extends React.Component {
   constructor(props) {
     super(props);
@@ -26,6 +28,7 @@ class ModalExample extends React.Component {
       <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
         <ModalHeader toggle={this.toggle}>Create One</ModalHeader>
         <ModalBody>
+<<<<<<< HEAD:compendium/client/src/components/Modal/ModalExample.js
 This will be our input form
 <form>
         <p>Enter Category:</p>
@@ -61,6 +64,10 @@ This will be our input form
         <button type="submit">Upload</button>
       </form>
           </ModalBody>
+=======
+         
+</ModalBody>
+>>>>>>> cb53453e3b76da6e93c34b55e51b11ce92dd38c4:compendium/src/components/Modal/ModalExample.js
           <ModalFooter>
             <Button id="submit" color="warning" onClick={this.toggle}>
               Add to Collection

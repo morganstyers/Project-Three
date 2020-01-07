@@ -1,10 +1,17 @@
 import React from "react";
+<<<<<<< HEAD:compendium/client/src/Pages/Home.js
 import Jumbotron from "../components/Jumbotron/index"
 // import Input from "../components/Input/index";
+=======
+import Jumbotron from "../components/Jumbotron/index";
+import Input from "../components/Input/index";
+>>>>>>> cb53453e3b76da6e93c34b55e51b11ce92dd38c4:compendium/src/Pages/Home.js
 import './hStyle.css';
 import ModalExample from "../components/Modal/ModalExample";
 import Typography from '@material-ui/core/Typography';
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import { Button } from 'reactstrap';
+import AddCollection from '../components/Modal/addCollection';
 
 const Home = () => {
   const styles = {
@@ -37,10 +44,13 @@ const Home = () => {
         </div>
       </nav>
       <Jumbotron />
-      <h2>You have no collections. Would you like to create a one?</h2>
+      <h2> See your existing collections or create a new one.</h2>
       <br/>
       <div style={styles}>
-        <ModalExample buttonLabel="Create Collection" />
+        <span>        <Button style={{margin:2}} href='/Collections'>View Your Collections</Button>
+<hr/>
+<AddCollection  buttonLabel="Create Collection" />
+</span>
       </div>
       {/* <Input /> */}
       <Typography variant="body2" color="textSecondary" align="center">
