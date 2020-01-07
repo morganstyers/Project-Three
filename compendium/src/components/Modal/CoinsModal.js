@@ -1,5 +1,7 @@
 import React from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import CoinGallery from '../Carousel /CoinGallery';
+
 import './style.css';
 
 class CoinsModal extends React.Component {
@@ -25,7 +27,7 @@ class CoinsModal extends React.Component {
                     <ModalHeader toggle={this.toggle}>
                         Coins</ModalHeader>
                     <ModalBody>
-
+<CoinGallery></CoinGallery>
                     </ModalBody>
                     <ModalFooter>
                     <Button id="submit" color="primary" onClick={this.toggle}>

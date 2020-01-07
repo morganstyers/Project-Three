@@ -103,9 +103,10 @@ function MyVerticallyCenteredModal(props) {
   
     return (
       <ButtonToolbar>
-        <Button variant="warning" onClick={() => setModalShow(true)}>
+        <Button  style={{marginLeft: 145}} variant="warning" onClick={() => setModalShow(true)}>
      Add New Coin
         </Button>
+    
   
         <MyVerticallyCenteredModal
           show={modalShow}
