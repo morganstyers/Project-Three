@@ -1,4 +1,4 @@
-import React from "react";
+import React from "./node_modules/react";
 
 class ItemForm extends React.Component {
   constructor(props) {
@@ -7,7 +7,7 @@ class ItemForm extends React.Component {
       category: '',
       item: '',
       quantity: null,
-      condition: 'Excellent',
+      condition: '',
       description: '',
       file: null,
     };
@@ -32,12 +32,16 @@ class ItemForm extends React.Component {
         name='quantity'
       />
       <p>Enter condition:</p>
-      <select >
+      <input
+        type='text'
+        name='condition'
+      />
+      {/* <select >
         <option value="Excellent">Excellent</option>
         <option value="Good">Good</option>
         <option value="Fair">Fair</option>
         <option value="Poor">Poor</option>
-      </select>
+      </select> */}
       <p>Enter description:</p>
       <textarea value={this.state.description} />
       <p>Image Upload:</p>

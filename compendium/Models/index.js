@@ -1,4 +1,4 @@
 module.exports = {
-    Collections: require("./Collections")
+    Rock: require("./rock")
   };
   

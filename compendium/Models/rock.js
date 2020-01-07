@@ -3,16 +3,16 @@ const Schema = mongoose.Schema;
 
 
 // Schema
-const CollectionsSchema = new Schema ({
+const rockSchema = new Schema ({
     category: { type: String, required: true },
     name: { type: String, required: true },
     quantity: { type: Number, required: true },
     condition: { type: String, required: true },
     description: { type: String, required: true },
-    image: { data: Buffer, contentType: String, required: true }
+    image: { data: Buffer, contentType: String }
   
   })
-  // Model
-//   const Collections = mongoose.model('Collections', CollectionsSchema);
-
-  module.exports = Collections;
+  
+  const Rock = mongoose.model("Rock", rockSchema);
+  
+  module.exports = Rock;

@@ -1,8 +1,4 @@
 import React from 'react';
-import CollectionTable from './components/CollectionTable';
-import Form from './components/Form';
-import Message from './components/Message';
-import CollectionAPI from './CollectionAPI';
 import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom"
 

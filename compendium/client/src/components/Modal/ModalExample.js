@@ -27,10 +27,43 @@ class ModalExample extends React.Component {
         <ModalHeader toggle={this.toggle}>Create One</ModalHeader>
         <ModalBody>
 This will be our input form
+<form>
+        <p>Enter Category:</p>
+      <input
+        type='text'
+        name='category'
+      />
+      <p>Enter item:</p>
+      <input
+        type='text'
+        name='item'
+      />
+      <p>Enter quantity:</p>
+      <input
+        type='num'
+        name='quantity'
+      />
+      <p>Enter condition:</p>
+      <input
+        type='text'
+        name='condition'
+      />
+      {/* <select >
+        <option value="Excellent">Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Fair">Fair</option>
+        <option value="Poor">Poor</option>
+      </select> */}
+      <p>Enter description:</p>
+      <textarea value={this.state.description} />
+      <p>Image Upload:</p>
+        <input type="file" onChange={this.onChange} />
+        <button type="submit">Upload</button>
+      </form>
           </ModalBody>
           <ModalFooter>
             <Button id="submit" color="warning" onClick={this.toggle}>
-              Do Something
+              Add to Collection
             </Button>{" "}
 
             <Button id="close" color="secondary" onClick={this.toggle}>

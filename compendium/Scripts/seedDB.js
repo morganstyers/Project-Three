@@ -5,23 +5,31 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/127.0.0.1:27017/compendiumdb"
+  "mongodb://localhost/reactreadinglist"
 );
 
-const collectionSeed = [
+const rockSeed = [
   {
-    category: "Rachel Pics",
-    name: "Hard Style",
-    quantity: 1,
-    condition: 'Excellent',
-    description: 'Hard style at EB',
-    image: './Assets/Images/Rachel-Hard-Style.jpeg'
+    category: "Rocks",
+    name: "Limestone",
+    quantity: "1",
+    condition: "Excellent",
+    description: "Super limey",
+    image: "./assets/images/limestone.jpeg"
+  },
+  {
+    category: "Rocks",
+    name: "Bedrock",
+    quantity: "1",
+    condition: "Good",
+    description: "Yabba Dabba Doo",
+    image: "./assets/images/bedrock.jpeg"
   }, 
 ];
 
-db.Collection
+db.Rock
   .remove({})
-  .then(() => db.Collection.collection.insertMany(collectionSeed))
+  .then(() => db.Rock.collection.insertMany(rockSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
