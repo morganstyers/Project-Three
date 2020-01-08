@@ -19,7 +19,7 @@ return(
 </FormGroup>
 <FormGroup>
 <Label for="exampleFile">Additional Information</Label>
-<Input type="file" name="file" id="exampleFile" />
+<Input type="test" name="test" id="exampleText" />
 <FormText color="muted">
 You can say anything you want! I don't care! Do a swear if you really need to!
 </FormText>

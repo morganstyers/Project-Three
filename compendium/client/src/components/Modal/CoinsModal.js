@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
-import CoinGallery from '../Carousel /CoinGallery';
+import CoinGallery from '../Carousel/CoinGallery';
 // import './style.css';
 
 class CoinsModal extends React.Component {

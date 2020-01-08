@@ -5,6 +5,9 @@ import RocksModal from "../components/Modal/RocksModal";
 import CoinsModal from "../components/Modal/CoinsModal";
 import AddCoinModal from '../components/Modal/addCoinModal';
 
+
+
+
 import { Link } from "react-router-dom";
 
 import './hStyle.css';
@@ -78,7 +81,7 @@ Coins                            </CardTitle>
                         </CardBody>
                     </Card>
                 </CardGroup>
-
+             
             </span>
             <br />
             <Typography variant="body2" color="textSecondary" align="center">
