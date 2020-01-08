@@ -4,8 +4,7 @@ import AddMineral from "../components/Modal/addMineralModal";
 import RocksModal from "../components/Modal/RocksModal";
 import CoinsModal from "../components/Modal/CoinsModal";
 import AddCoinModal from '../components/Modal/addCoinModal';
-import MinCollection from '../components/Modal/minShow';
-import CoinCollection from '../components/Modal/coinShow';
+
 
 import { Link } from "react-router-dom";
 
