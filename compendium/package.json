@@ -23,10 +23,15 @@
   "dependencies": {
     "axios": "^0.18.0",
     "express": "^4.16.3",
+    "gsap": "^3.0.4",
     "if-env": "^1.0.4",
     "mongoose": "^5.3.16",
     "node": "^13.5.0",
+    "pose": "^2.3.1",
     "react-bootstrap": "^1.0.0-beta.16",
-    "react-lightbox-component": "^1.2.1"
+    "react-gsap": "^1.2.0",
+    "react-lightbox-component": "^1.2.1",
+    "react-pose": "^4.0.10",
+    "react-pose-text": "^3.1.0"
   }
 }
