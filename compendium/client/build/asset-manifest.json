@@ -1,6 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.96829275.chunk.css",
+<<<<<<< HEAD
     "main.js": "/static/js/main.f05c5d8b.chunk.js",
     "main.js.map": "/static/js/main.f05c5d8b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e41db10a.js",
@@ -14,13 +15,34 @@
     "static/css/2.8271af8e.chunk.css.map": "/static/css/2.8271af8e.chunk.css.map",
     "static/css/main.96829275.chunk.css.map": "/static/css/main.96829275.chunk.css.map",
     "static/js/2.03c7ea9d.chunk.js.LICENSE": "/static/js/2.03c7ea9d.chunk.js.LICENSE",
+=======
+    "main.js": "/static/js/main.2133f5d9.chunk.js",
+    "main.js.map": "/static/js/main.2133f5d9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e41db10a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e41db10a.js.map",
+    "static/css/2.8271af8e.chunk.css": "/static/css/2.8271af8e.chunk.css",
+    "static/js/2.52964181.chunk.js": "/static/js/2.52964181.chunk.js",
+    "static/js/2.52964181.chunk.js.map": "/static/js/2.52964181.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.89e9764f8d93cc130384daedca612a08.js": "/precache-manifest.89e9764f8d93cc130384daedca612a08.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.8271af8e.chunk.css.map": "/static/css/2.8271af8e.chunk.css.map",
+    "static/css/main.96829275.chunk.css.map": "/static/css/main.96829275.chunk.css.map",
+    "static/js/2.52964181.chunk.js.LICENSE": "/static/js/2.52964181.chunk.js.LICENSE",
+>>>>>>> cf99677a9bc42d3a515b76734c8eeec4e11ebd6f
     "static/media/index.css": "/static/media/roboto-latin-900italic.ebf6d164.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.e41db10a.js",
     "static/css/2.8271af8e.chunk.css",
+<<<<<<< HEAD
     "static/js/2.03c7ea9d.chunk.js",
     "static/css/main.96829275.chunk.css",
     "static/js/main.f05c5d8b.chunk.js"
+=======
+    "static/js/2.52964181.chunk.js",
+    "static/css/main.96829275.chunk.css",
+    "static/js/main.2133f5d9.chunk.js"
+>>>>>>> cf99677a9bc42d3a515b76734c8eeec4e11ebd6f
   ]
 }

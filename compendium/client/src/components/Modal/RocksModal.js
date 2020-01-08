@@ -1,7 +1,11 @@
 import React from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+<<<<<<< HEAD
 import RockGallery from '../Carousel/RockGallery';
 // import './style.css'
+=======
+import RockGallery from '../Carousel/RocksGallery'// import './style.css'
+>>>>>>> cf99677a9bc42d3a515b76734c8eeec4e11ebd6f
 
 class RocksModal extends React.Component {
   constructor(props) {
