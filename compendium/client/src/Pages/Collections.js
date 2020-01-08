@@ -6,11 +6,6 @@ import CoinsModal from "../components/Modal/CoinsModal";
 import AddCoinModal from '../components/Modal/addCoinModal';
 
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> cf99677a9bc42d3a515b76734c8eeec4e11ebd6f
 import { Link } from "react-router-dom";
 
 import './hStyle.css';
