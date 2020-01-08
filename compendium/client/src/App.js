@@ -8,7 +8,8 @@ import PasswordSent from "./Pages/PasswordSent";
 import NotFoundPage from "./Pages/404";
 import aboutUs from "./Pages/About";
 import collections from './Pages/Collections';
-import yourAccount from './Pages/Account'
+import yourAccount from './Pages/Account';
+import Rocks from './Pages/Rocks';
 
 class App extends Component {
   render() {
@@ -29,6 +30,7 @@ class App extends Component {
           <Route exact path="/About" component={aboutUs} />
           <Route exact path="/Collections" component={collections} />
           <Route exact path="/Account" component={yourAccount} />
+          <Route exact path="/Rocks" component={Rocks} />
 
 
 
