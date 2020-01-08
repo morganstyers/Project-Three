@@ -8,10 +8,7 @@ import PasswordSent from "./Pages/PasswordSent";
 import NotFoundPage from "./Pages/404";
 import aboutUs from "./Pages/About";
 import collections from './Pages/Collections';
-
-import yourAccount from './Pages/Account';
 import Rocks from './Pages/Rocks';
-
 import yourAccount from './Pages/Account'
 import Catalogue from './components/Catalogue/Catalogue';
 
