@@ -4,6 +4,8 @@ import AddMineral from "../components/Modal/addMineralModal";
 import RocksModal from "../components/Modal/RocksModal";
 import CoinsModal from "../components/Modal/CoinsModal";
 import AddCoinModal from '../components/Modal/addCoinModal';
+import MinCollection from '../components/Modal/minShow';
+import CoinCollection from '../components/Modal/coinShow';
 
 import { Link } from "react-router-dom";
 
@@ -13,6 +15,8 @@ import {
     CardSubtitle, CardBody
 } from 'reactstrap';
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
+
+
 
 const collections = () => {
     return (
@@ -46,7 +50,7 @@ const collections = () => {
                     <Card>
                         <CardImg top width="100%" src="" alt="Card image cap" />
                         <CardBody>
-                            <CardTitle>Card title</CardTitle>
+                            <CardTitle>card </CardTitle>
                             <CardSubtitle>Card subtitle</CardSubtitle>
                             <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
                         </CardBody>
