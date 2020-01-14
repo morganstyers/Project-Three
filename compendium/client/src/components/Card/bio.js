@@ -5,8 +5,10 @@ function Bio() {
     return (
             <Card style={{ width: 700, marginLeft: 350, marginTop: 20 }} color="default">
                 <hr />
-                A compendium is a concise collection of information pertaining to a body of knowledge. A compendium may summarize a larger work. In most cases the body of knowledge will concern a specific field of human interest or endeavour, while a general encyclopedia can be referred to as a compendium of all human knowledge.
-                We Have created a way to have that at your fingertips.
+                <p>Morgan Styers - cat lover, free thinker, lover of all things art.</p>
+                <p>Rachel Doran - also a cat lover, vegetarian, music enthusiast</p>
+                <p>Brian Yeager - down to earth dude, dog lover, sagittarius</p>
+
                 <hr/>
         </Card>
     );

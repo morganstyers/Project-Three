@@ -81,7 +81,7 @@ Coins                            </CardTitle>
                         </CardBody>
                     </Card>
                 </CardGroup>
-
+             
             </span>
             <br />
             <Typography variant="body2" color="textSecondary" align="center">

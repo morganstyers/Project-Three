@@ -13,6 +13,8 @@ import CollectionInfo from '../Inputs/Info';
 import AddInfo from '../Inputs/AddInfo';
 
 
+
+
 const useStyles = makeStyles(theme => ({
     root: {
         width: '100%',
@@ -93,12 +95,23 @@ export default function VerticalLinearStepper() {
                                         onClick={handleBack}
                                         className={classes.button}>
                                         Back</Button>
-                                    <Button
+                                    <Button 
                                         variant="contained"
                                         color="primary"
                                         onClick={handleNext}
                                         className={classes.button}>
-                                        {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+                                        {activeStep === steps.length - 1 ? 'Finish  ' : 'Next'}
+                                        
+                                       
+                                       
+
+                                    
+                                        
+
+                                      
+                                        
+                                        
+                               
                                     </Button>
                                 </div>
                             </div>
