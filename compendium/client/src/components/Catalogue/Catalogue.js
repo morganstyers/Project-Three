@@ -1,7 +1,4 @@
 import React from 'react';
-import {Card} from 'reactstrap';
-import MinCat from '../Card/mincat';
-import CoinCat from '../Card/coincat';
 import CatMenu from './catMenus'
 import './style.css'
 // Full blog theme demo and download available at http://thomasvaeth.com/trophy/
