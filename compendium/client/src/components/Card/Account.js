@@ -3,7 +3,7 @@ import { Card, CardTitle, CardText, Row, Col } from 'reactstrap';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import WebIcon from '@material-ui/icons/Web';
 import { Jumbotron } from 'reactstrap';
-import Catalogue from '../Catalogue/Catalogue'
+import CatMenu from '../Catalogue/catMenus'
 
 
 const Account = (props) => {
@@ -16,8 +16,8 @@ const Account = (props) => {
                     <CardText>
                         <Jumbotron>
                         <li>Icon</li>
-                        <li>First Name, Last Name.</li>
-                        <li>Username</li>
+                        <li>Morgan Styers.</li>
+                        <li>morganstyers</li>
                         <li>Address</li>
                         <li>Info</li>
                         <li>edit account info</li>
@@ -29,9 +29,9 @@ const Account = (props) => {
                 <Card body>
                     <CardTitle> <WebIcon fontSize='large'></WebIcon>Your Account </CardTitle>
                     <hr />
-                    <CardText>This is where collections go, users permissions, social media, e-commerce info etc </CardText>     
+                    <CardText></CardText>     
                     <Jumbotron>
-                        <h5>Your Collections</h5><Catalogue/></Jumbotron>
+                     <CatMenu/></Jumbotron>
                   
                 </Card>
             </Col>
