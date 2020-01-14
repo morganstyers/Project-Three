@@ -60,8 +60,8 @@ export default function SignIn() {
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
-        <Typography component="h1" variant="h5">
-          Sign in
+        <Typography component="h1" variant="h3">
+          Compendium
         </Typography>
         <form className={classes.form} noValidate>
           <TextField
