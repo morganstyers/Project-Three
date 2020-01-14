@@ -9,8 +9,7 @@ function RockGallery() {
     <Card.Img variant="top" src="../images/rocks1.jpg" />
     <Card.Body>
       <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
+        This one's pretty cool.
       </Card.Text>
     </Card.Body>
   </Card>
@@ -20,8 +19,7 @@ function RockGallery() {
     <Card.Img variant="top" src="../images/rocks2.jpg" />
     <Card.Body>
       <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
+        So is this one.
       </Card.Text>
     </Card.Body>
   </Card>

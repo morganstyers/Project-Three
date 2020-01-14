@@ -47,11 +47,16 @@ const collections = () => {
             <span>
                 <CardGroup>
                     <Card>
-                        <CardImg top width="100%" src="" alt="Card image cap" />
+                        <CardImg top width="100%" src="../images/limestone.jpg" alt="Card image cap" />
                         <CardBody>
-                            <CardTitle>card </CardTitle>
-                            <CardSubtitle>Card subtitle</CardSubtitle>
-                            <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+                            <CardTitle>Rocks</CardTitle>
+                            <CardSubtitle>Here's all my rocks</CardSubtitle>
+                            <CardText>These are some really cool rocks.</CardText>
+                            <ButtonToolbar>
+                            <AddMineral id="rocks" buttonLabel="Add Rock" />
+                            <br />
+                            <RocksModal buttonLabel="Gallery"></RocksModal>
+                            </ButtonToolbar>
                         </CardBody>
                     </Card>
                     <Card>
@@ -59,8 +64,8 @@ const collections = () => {
                         <CardBody>
                         <CardTitle>
 Minerals                        </CardTitle>
-                            <CardSubtitle>Card subtitle</CardSubtitle>
-                            <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
+                            <CardSubtitle>Here's all my minerals</CardSubtitle>
+                            <CardText>Here's all my minerals.  What are minerals anyway?</CardText>
                             <ButtonToolbar>
                             <AddMineral id="rocks" buttonLabel="Add Mineral" />
                             <br />
@@ -73,8 +78,8 @@ Minerals                        </CardTitle>
                         <CardBody>
                             <CardTitle> 
 Coins                            </CardTitle>
-                            <CardSubtitle>Card subtitle</CardSubtitle>
-                            <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
+                            <CardSubtitle>Here's all my coins</CardSubtitle>
+                            <CardText>Here's some old money.  I don't know if it still works.</CardText>
                             <ButtonToolbar>
                                 <AddCoinModal id="coins" buttonLabel="Add Coin" />
                                 <CoinsModal buttonLabel="Gallery"></CoinsModal></ButtonToolbar>
