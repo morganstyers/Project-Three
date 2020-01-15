@@ -13,8 +13,5 @@ export default {
   deleteRock: function(id) {
     return axios.delete("/api/rocks/" + id);
   },
-  // Saves a book to the database
-  // saveRock: function(bookData) {
-  //   return axios.post("/api/rocks", rockData);
-  // }
+ 
 };
