@@ -7,11 +7,11 @@ import {
 } from "react-router-dom";
 import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
-import Home from "./Pages/Home";
+import Home from "./Pages/Home/Home";
 import ForgotPassword from "./Pages/ForgotPassword";
 import PasswordSent from "./Pages/PasswordSent";
 import NotFoundPage from "./Pages/404";
-import aboutUs from "./Pages/About";
+import aboutUs from "./Pages/About/About";
 import collections from "./Pages/Collections";
 import Rocks from "./Pages/Rocks";
 import yourAccount from "./Pages/Account";
