@@ -1,8 +1,21 @@
-.jumbotron {
-  min-height: 300px;
-  padding-top: 100px;
+#header{
+  max-width:2000px
 }
-h1{
-  font-family: 'Times New Roman', Times, serif;
-font-size: 50px;
+#img{
+  border: white 10px solid;
+  padding: 5px;
+  width:1300px;
+  height:700px; 
+  filter: blur(1px);
+}
+h5{
+  white-space:nowrap;
+  font-family:'Alata', sans-serif;
+  font-size: 50px;
+}
+#follow{
+bottom:-16px;
+}
+#box{
+  background-color:rbg(0,0,0,0.5);
 }
