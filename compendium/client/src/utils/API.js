@@ -10,7 +10,7 @@ export default {
     return axios.get("/api/rocks/" + id);
   },
   // Deletes the book with the given id
-  deleteRockk: function(id) {
+  deleteRock: function(id) {
     return axios.delete("/api/rocks/" + id);
   },
   // Saves a book to the database

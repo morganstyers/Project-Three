@@ -4,6 +4,7 @@ import AddMineral from "../components/Modal/addMineralModal";
 import RocksModal from "../components/Modal/RocksModal";
 import CoinsModal from "../components/Modal/CoinsModal";
 import AddCoinModal from '../components/Modal/addCoinModal';
+import AddRock from '../components/Modal/AddRock';
 
 
 import { Link } from "react-router-dom";
@@ -53,9 +54,9 @@ const collections = () => {
                             <CardSubtitle>Here's all my rocks</CardSubtitle>
                             <CardText>These are some really cool rocks.</CardText>
                             <ButtonToolbar>
-                            <AddMineral id="rocks" buttonLabel="Add Rock" />
+                            <AddRock id="rocks" buttonLabel="Add Rock" />
                             <br />
-                            <RocksModal buttonLabel="Gallery"></RocksModal>
+                            <AddRock buttonLabel="Gallery"></AddRock>
                             </ButtonToolbar>
                         </CardBody>
                     </Card>
