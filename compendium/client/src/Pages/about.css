@@ -1,0 +1,23 @@
+#mainimg{
+  width:60%;
+  min-height:150px;
+  max-height:400px;
+  z-index:0;
+}
+#t{
+  width:33%;
+}
+#work{
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+}
+#contact{
+    width: 30%;
+    display: inline-block;
+    margin-left: 15px;
+}
+#addy{
+    width: 30%;
+    display: inline-block;
+}

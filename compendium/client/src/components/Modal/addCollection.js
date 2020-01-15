@@ -1,8 +1,7 @@
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
+import {Button} from 'reactstrap';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import VerticalLinearStepper from '../Form/stepper'
-
 import React from 'react';
 
 function MyVerticallyCenteredModal(props) {
@@ -34,7 +33,7 @@ function MyVerticallyCenteredModal(props) {
   
     return (
       <ButtonToolbar>
-        <Button style={{margin:2}} variant="warning" onClick={() => setModalShow(true)}>
+        <Button  className="w3-hide-medium w3-hide-small" style={{marginLeft:210}} onClick={() => setModalShow(true)}>
      Start New Collection
         </Button>
   
