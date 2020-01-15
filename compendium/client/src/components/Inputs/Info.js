@@ -19,11 +19,7 @@ function CollectionInfo() {
                     <Label for="specimenName">Location</Label>
                     <Input type="name" name="specimenName" id="specimenName" placeholder="The Moon" />
                 </FormGroup>
-                {/* <FormGroup>
-                    <p>Is it super rare or just to you?</p>
-                    <Label for="specimenName">Rarity</Label>
-                    <Input type="name" name="specimenName" id="specimenName" placeholder="Hella Rare" />
-                </FormGroup> */}
+                
                 <FormGroup tag="fieldset">
 
                     <Label for="condition">Condition</Label>

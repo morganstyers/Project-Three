@@ -9,7 +9,7 @@ function RockGallery() {
     <Card.Img variant="top" src="../images/rocks1.jpg" />
     <Card.Body>
       <Card.Text>
-      This one's pretty cool.
+        This one's pretty cool.
       </Card.Text>
     </Card.Body>
   </Card>
@@ -29,7 +29,8 @@ function RockGallery() {
     <Card.Img variant="top" src="../images/rocks3.jpg" />
     <Card.Body>
       <Card.Text>
-        This one too.
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
       </Card.Text>
     </Card.Body>
   </Card>
@@ -39,7 +40,8 @@ function RockGallery() {
     <Card.Img variant="top" src="../images/rocks4.jpg" />
     <Card.Body>
       <Card.Text>
-        Not so cool.
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
       </Card.Text>
     </Card.Body>
   </Card>
@@ -49,7 +51,8 @@ function RockGallery() {
     <Card.Img variant="top" src="../images/rocks5.jpg" />
     <Card.Body>
       <Card.Text>
-        Meh
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
       </Card.Text>
     </Card.Body>
   </Card>

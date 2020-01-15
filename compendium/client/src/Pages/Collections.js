@@ -1,11 +1,10 @@
 import React from "react";
 import Typography from '@material-ui/core/Typography';
 import AddMineral from "../components/Modal/addMineralModal";
-import AddRock from "../components/Modal/addRockModal";
 import RocksModal from "../components/Modal/RocksModal";
 import CoinsModal from "../components/Modal/CoinsModal";
 import AddCoinModal from '../components/Modal/addCoinModal';
-// import AddRock from '../components/Modal/AddRock';
+import AddRock from '../components/Modal/AddRock';
 
 
 import { Link } from "react-router-dom";
@@ -55,10 +54,8 @@ const collections = () => {
                             <CardSubtitle>Here's all my rocks</CardSubtitle>
                             <CardText>These are some really cool rocks.</CardText>
                             <ButtonToolbar>
-                            <AddRock id="rocks" buttonLabel="Add Rock" />
-                            <br />
-                            <AddRock buttonLabel="Gallery"></AddRock>
-                            </ButtonToolbar>
+                                <AddRock id="rocks" buttonLabel="Add Rock" />
+                                <RocksModal buttonLabel="Gallery"></RocksModal></ButtonToolbar>
                         </CardBody>
                     </Card>
                     <Card>
@@ -69,7 +66,7 @@ Minerals                        </CardTitle>
                             <CardSubtitle>Here's all my minerals</CardSubtitle>
                             <CardText>Here's all my minerals.  What are minerals anyway?</CardText>
                             <ButtonToolbar>
-                            <AddMineral id="rocks" buttonLabel="Add Rock" />
+                            <AddMineral id="mineral" buttonLabel="Add Mineral" />
                             <br />
                             <RocksModal buttonLabel="Gallery"></RocksModal>
                             </ButtonToolbar>

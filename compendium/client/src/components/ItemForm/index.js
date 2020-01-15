@@ -36,12 +36,7 @@ class ItemForm extends React.Component {
         type='text'
         name='condition'
       />
-      {/* <select >
-        <option value="Excellent">Excellent</option>
-        <option value="Good">Good</option>
-        <option value="Fair">Fair</option>
-        <option value="Poor">Poor</option>
-      </select> */}
+      
       <p>Enter description:</p>
       <textarea value={this.state.description} />
       <p>Image Upload:</p>

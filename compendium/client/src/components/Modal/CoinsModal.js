@@ -19,7 +19,7 @@ class CoinsModal extends React.Component {
     render() {
         return (
             <div>
-                <Button style={{marginLeft: 15}}color="warning" onClick={this.toggle}>
+                <Button style={{ marginLeft: 15 }} color="warning" onClick={this.toggle}>
                     {this.props.buttonLabel}
                 </Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
@@ -29,7 +29,7 @@ class CoinsModal extends React.Component {
                         <CoinGallery></CoinGallery>
                     </ModalBody>
                     <ModalFooter>
-                    <Button id="submit" color="primary" onClick={this.toggle}>
+                        <Button id="submit" color="primary" onClick={this.toggle}>
                             Submit </Button>
                         <Button id="close" color="secondary" onClick={this.toggle}>
                             Close </Button>
