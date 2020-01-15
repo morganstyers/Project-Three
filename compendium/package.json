@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "server.js",
+  "engines": {
+    "node": "12.13.0"
+  },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "seed": "node scripts/seedDB.js",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "install": "cd client && npm install"
   },
   "author": "",
   "license": "ISC",
@@ -22,9 +23,15 @@
   "dependencies": {
     "axios": "^0.18.0",
     "express": "^4.16.3",
+    "gsap": "^3.0.4",
     "if-env": "^1.0.4",
     "mongoose": "^5.3.16",
+    "node": "^13.5.0",
+    "pose": "^2.3.1",
     "react-bootstrap": "^1.0.0-beta.16",
-    "react-lightbox-component": "^1.2.1"
+    "react-gsap": "^1.2.0",
+    "react-lightbox-component": "^1.2.1",
+    "react-pose": "^4.0.10",
+    "react-pose-text": "^3.1.0"
   }
 }

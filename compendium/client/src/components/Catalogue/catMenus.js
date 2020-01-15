@@ -1,5 +1,7 @@
 import React from 'react';
-import CatMenu from './catMenus'
+import {Card} from 'reactstrap';
+import MinCat from '../Card/mincat';
+import CoinCat from '../Card/coincat';
 import './style.css'
 // Full blog theme demo and download available at http://thomasvaeth.com/trophy/
 var Tabs = (function() {
@@ -104,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
   Preview.init();
 });
 
-class Catalogue extends React.Component {
+class CatMenu extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -138,13 +140,13 @@ class Catalogue extends React.Component {
     
      render() {
        return(
-<<<<<<< HEAD
-         <div id="react-application">
 
+<div id="react-application">
+<h1>Your Compendium</h1>
            <div className="controls">
              <button id="button_one" onClick={this.handleClick}>Minerals</button>
              <button id="button_two" onClick={this.handleClick}>Coins</button>
-             <button id="button_three" onClick={this.handleClick}>Rocks</button>
+             <button id="button_three" onClick={this.handleClick}>Render Div Three</button>
            </div>
            <div className="conditional-render-section">
            {
@@ -180,38 +182,11 @@ class Catalogue extends React.Component {
            }
            </div>
          </div>
-=======
 
-<div id="react-application">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="/">Compendium</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Home">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Collections">Collections</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/About">About Us</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/Account">Account <span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <CatMenu></CatMenu>
-            </div>
->>>>>>> dba89119709d042a2e52bc35d9d66b3c7d7bd7b0
        )
      }
   }
 
 
-export default Catalogue;
+export default CatMenu;
 
