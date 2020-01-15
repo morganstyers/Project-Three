@@ -42,7 +42,7 @@ class Catalogue extends React.Component {
            <div className="controls">
              <button id="button_one" onClick={this.handleClick}>Minerals</button>
              <button id="button_two" onClick={this.handleClick}>Coins</button>
-             <button id="button_three" onClick={this.handleClick}>Render Div Three</button>
+             <button id="button_three" onClick={this.handleClick}>Rocks</button>
            </div>
            <div className="conditional-render-section">
            {
