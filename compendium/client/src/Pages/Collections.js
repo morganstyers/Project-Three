@@ -1,7 +1,7 @@
 import React from "react";
 import Typography from '@material-ui/core/Typography';
 import AddMineral from "../components/Modal/addMineralModal";
-import AddRock from "../components/Modal/addRockModal";
+// import AddRock from "../components/Modal/addRockModal";
 import RocksModal from "../components/Modal/RocksModal";
 import CoinsModal from "../components/Modal/CoinsModal";
 import AddCoinModal from '../components/Modal/addCoinModal';
@@ -69,7 +69,7 @@ Minerals                        </CardTitle>
                             <CardSubtitle>Here's all my minerals</CardSubtitle>
                             <CardText>Here's all my minerals.  What are minerals anyway?</CardText>
                             <ButtonToolbar>
-                            <AddMineral id="rocks" buttonLabel="Add Mineral" />
+                            <AddMineral id="rocks" buttonLabel="Add Rock" />
                             <br />
                             <RocksModal buttonLabel="Gallery"></RocksModal>
                             </ButtonToolbar>

@@ -138,49 +138,6 @@ class Catalogue extends React.Component {
     
      render() {
        return(
-<<<<<<< HEAD
-         <div id="react-application">
-
-           <div className="controls">
-             <button id="button_one" onClick={this.handleClick}>Minerals</button>
-             <button id="button_two" onClick={this.handleClick}>Coins</button>
-             <button id="button_three" onClick={this.handleClick}>Rocks</button>
-           </div>
-           <div className="conditional-render-section">
-           {
-            this.state.button_one 
-               ? 
-            (<div id="div-one">
-                <div className="img-wrapper"><Card> <MinCat/>  </Card>
-             </div>
-              </div>) 
-               :
-            (<div></div>)
-           }
-           {
-            this.state.button_two
-               ? 
-            (<div id="div-two">
-              <div className="img-wrapper">
-              <Card> <CoinCat/>  </Card>          </div>
-              </div>) 
-               :
-            (<div></div>)
-           }
-           {
-            this.state.button_three 
-               ? 
-            (<div id="div-three">
-              <div className="img-wrapper">
-<h1>who knows</h1>              </div>
-                <p>credit: unsplash.com - Thank you @mrrrk_smith </p>
-              </div>) 
-               :
-            (<div></div>)
-           }
-           </div>
-         </div>
-=======
 
 <div id="react-application">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -207,7 +164,6 @@ class Catalogue extends React.Component {
             </nav>
             <CatMenu></CatMenu>
             </div>
->>>>>>> dba89119709d042a2e52bc35d9d66b3c7d7bd7b0
        )
      }
   }
