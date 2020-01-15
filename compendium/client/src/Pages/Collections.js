@@ -1,11 +1,11 @@
 import React from "react";
 import Typography from '@material-ui/core/Typography';
 import AddMineral from "../components/Modal/addMineralModal";
-// import AddRock from "../components/Modal/addRockModal";
+import AddRock from "../components/Modal/addRockModal";
 import RocksModal from "../components/Modal/RocksModal";
 import CoinsModal from "../components/Modal/CoinsModal";
 import AddCoinModal from '../components/Modal/addCoinModal';
-import AddRock from '../components/Modal/AddRock';
+// import AddRock from '../components/Modal/AddRock';
 
 
 import { Link } from "react-router-dom";
