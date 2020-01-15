@@ -11,11 +11,13 @@ In the future, we aim to add social media aspects, e-commerce and mobile-phone a
 ## Stats
 ---
 Compendium is a React App from head to toe, styled with CSS and reactstrap, hosted on Heroku, served by Node.js and datalogged with MongoDB. 
-Compendium was made by 
-Rachel Mitchell- https://github.com/racheldoran
-Brian Yeager- https://github.com/byeager999
-and Morgan Styers -https://github.com/morganstyers
+Compendium was made by:
 
+- Rachel Mitchell- https://github.com/racheldoran
+- Brian Yeager- https://github.com/byeager999
+- and Morgan Styers -https://github.com/morganstyers
+
+---
 You can see a preview of our app, here:  https://compendium-collections.herokuapp.com/
 
 
