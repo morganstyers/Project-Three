@@ -44,7 +44,7 @@ function getStepContent(step) {
       Don't worry, we've made this as user friendly as possible- you've done all the work, let us do 
       the boring stuff. When you're ready to get started, click 'next!'`;
         case 1:
-            return <Card> <p>What kind of super cool stuff do you collect? Right now we only have set categories, but soon we hope to let you customize your own!</p>
+            return <Card> <p>What kind of super cool stuff do you collect? Enter a collection name and lets get started!</p>
                             <SelectACollection/></Card>
                                                     
     case 2:
