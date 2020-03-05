@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import DeleteBtn from "../components/DeleteBtn";
+/*import DeleteBtn from "../components/DeleteBtn";*/
 import API from "../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
@@ -48,7 +48,6 @@ class Rocks extends Component {
                                                 {rock.name}
                                             </strong>
                                         </Link>
-                                        <DeleteBtn onClick={() => this.deleteRock(rock._id)} />
                                     </ListItem>
                                 ))}
 

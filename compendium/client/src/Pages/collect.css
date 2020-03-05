@@ -1,5 +1,6 @@
 
-*, *:after, *:before{
+/*, *:after, *:before{
+  
   box-sizing: border-box}
 
 $l1: hsla(0, 0%, 100%, 1)
@@ -64,12 +65,12 @@ body{
 }
 
 .cardContainer{
-  position: relative
-  +size(300px, 400px)
-  min-width: 300px
-  min-height: 400px
-  margin: 4px
-  perspective: 1000px
+  position: relative;
+  size:300px, 400px;
+  min-width: 300px;
+  min-height: 400px;
+  margin: 4px;
+  perspective: 1000px;
 }
 
 .active{
@@ -79,21 +80,21 @@ body{
 }
 
 .card{
-  display: inline-block
-  +size(100%, 100%)
-  cursor: pointer
-  -moz-backface-visibility: hidden
-  transform-style: preserve-3d
-  transform: translateZ(-100px)
+  display: inline-block;
+  +size:100%, 100%;
+  cursor: pointer;
+  -moz-backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1)}
   :after{
-    content: ''
-    position: absolute
-    z-index: -1
-    +size(100%, 100%)
-    border-radius: 5px
-    box-shadow: 0 14px 50px -4px hsla(0, 0%, 0%, 0.15)
-    opacity: 0
+    content: '';
+    position: absolute;
+    z-index: -1;
+    size:100%, 100%;
+    border-radius: 5px;
+    box-shadow: 0 14px 50px -4px hsla(0, 0%, 0%, 0.15);
+    opacity: 0;
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1.4)}
   :hover{
     transform: translateZ(0px)}
@@ -101,12 +102,11 @@ body{
     opacity: 1
   }
   .side{
-    -webkit-backface-visibility: hidden
-    backface-visibility: hidden
-    position: absolute
-    +size(100%, 100%)
-    border-radius: 5px
-    background-color: $l1
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    size:100%, 100%;
+    border-radius: 5px;
 }
   .front{
     z-index: 2}
@@ -193,3 +193,4 @@ body{
       transform: translateX(-8px)
       opacity: 0
       transition: all 0.3s ease-out
+*/
