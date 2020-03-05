@@ -1,37 +1,53 @@
 {
-  "name": "mern",
-  "version": "1.0.0",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "server.js",
+  "name": "compendium",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost/3002",
   "engines": {
     "node": "12.13.0"
   },
-  "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod":  "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd compendium && cd client && npm run start",
-    "seed": "node scripts/seedDB.js",
-    "install": "cd compendium && cd client && npm install"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "concurrently": "^4.1.0",
-    "nodemon": "^1.18.7"
-  },
   "dependencies": {
-    "axios": "^0.18.0",
-    "express": "^4.16.3",
-    "gsap": "^3.0.4",
-    "if-env": "^1.0.4",
-    "mongoose": "^5.3.16",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "@material-ui/core": "^4.8.2",
+    "@material-ui/icons": "^4.5.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.0",
+    "fibers": "^4.0.2",
+    "material-ui": "^0.20.2",
+    "mongoose": "^5.8.5",
     "node": "^13.5.0",
-    "pose": "^2.3.1",
-    "react-bootstrap": "^1.0.0-beta.16",
-    "react-gsap": "^1.2.0",
-    "react-lightbox-component": "^1.2.1",
-    "react-pose": "^4.0.10",
-    "react-pose-text": "^3.1.0"
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
+    "react-render-as": "^0.1.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0",
+    "react-tap-event-plugin": "^3.0.3",
+    "reactstrap": "^8.2.0",
+    "sass": "^1.24.1",
+    "typeface-roboto": "0.0.75",
+    "typescript": "^3.7.4"
+  },
+  "scripts": {
+    "start": "cd compendium && cd client && npm run start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
