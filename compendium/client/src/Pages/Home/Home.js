@@ -1,6 +1,5 @@
 import React from "react";
-import Jumbotron from "../components/Jumbotron/index";
-import './hStyle.css';
+import Jumbotron from "../../components/Jumbotron/index";
 import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom";
 
