@@ -1,6 +1,16 @@
+<<<<<<< HEAD
 import React from 'react';
 import './collect.css';
 function collections() {
+=======
+import React from "react";
+import Typography from '@material-ui/core/Typography';
+import AddMineral from "../components/Modal/addMineralModal";
+import RocksModal from "../components/Modal/RocksModal";
+import CoinsModal from "../components/Modal/CoinsModal";
+import AddCoinModal from '../components/Modal/addCoinModal';
+import AddRock from '../components/Modal/AddRock';
+>>>>>>> bdae2d4f8f2031144e49052fc42ac16051efaaa9
 
     return (
         <div class="container">
@@ -71,7 +81,64 @@ function collections() {
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
             </div>
+=======
+            </nav>
+            <br />
+            <h2>Your Collections</h2>
+            <span>
+                <CardGroup>
+                    <Card>
+                        <CardImg top width="100%" src="../images/limestone.jpg" alt="Card image cap" />
+                        <CardBody>
+                            <CardTitle>Rocks</CardTitle>
+                            <CardSubtitle>Here's all my rocks</CardSubtitle>
+                            <CardText>These are some really cool rocks.</CardText>
+                            <ButtonToolbar>
+                                <AddRock id="rocks" buttonLabel="Add Rock" />
+                                <RocksModal buttonLabel="Gallery"></RocksModal></ButtonToolbar>
+                        </CardBody>
+                    </Card>
+                    <Card>
+                        <CardImg top width="100%" src="../images/rocks3.jpg" alt="Card image cap" />
+                        <CardBody>
+                        <CardTitle>
+Minerals                        </CardTitle>
+                            <CardSubtitle>Here's all my minerals</CardSubtitle>
+                            <CardText>Here's all my minerals.  What are minerals anyway?</CardText>
+                            <ButtonToolbar>
+                            <AddMineral id="mineral" buttonLabel="Add Mineral" />
+                            <br />
+                            <RocksModal buttonLabel="Gallery"></RocksModal>
+                            </ButtonToolbar>
+                        </CardBody>
+                    </Card>
+                    <Card>
+                        <CardImg top width="100%" src="../images/2centfront.jpg" alt="Card image cap" />
+                        <CardBody>
+                            <CardTitle> 
+Coins                            </CardTitle>
+                            <CardSubtitle>Here's all my coins</CardSubtitle>
+                            <CardText>Here's some old money.  I don't know if it still works.</CardText>
+                            <ButtonToolbar>
+                                <AddCoinModal id="coins" buttonLabel="Add Coin" />
+                                <CoinsModal buttonLabel="Gallery"></CoinsModal></ButtonToolbar>
+                        </CardBody>
+                    </Card>
+                </CardGroup>
+             
+            </span>
+            <br />
+            <Typography variant="body2" color="textSecondary" align="center">
+                {'Copyright © '}
+                <Link color="inherit">
+                    Compendium
+      </Link>{' '}
+                {new Date().getFullYear()}
+                {'.'}
+            </Typography>
+>>>>>>> bdae2d4f8f2031144e49052fc42ac16051efaaa9
         </div>
 
         <div class="cardContainer inactive">

@@ -1,9 +1,9 @@
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
+import {Button} from 'reactstrap';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import VerticalLinearStepper from '../Form/stepper'
-
 import React from 'react';
+import './addCollection.css';
 
 function MyVerticallyCenteredModal(props) {
     return (
@@ -29,12 +29,12 @@ function MyVerticallyCenteredModal(props) {
       </Modal>
     );
   }
-  function AddCoinModel() {
+  function AddCollection() {
     const [modalShow, setModalShow] = React.useState(false);
   
     return (
       <ButtonToolbar>
-        <Button style={{margin:2}} variant="warning" onClick={() => setModalShow(true)}>
+        <Button id="add" className="w3-hide-medium w3-hide-small" onClick={() => setModalShow(true)}>
      Start New Collection
         </Button>
   
@@ -48,4 +48,4 @@ function MyVerticallyCenteredModal(props) {
   
 
 
-  export default AddCoinModel;
+  export default AddCollection;

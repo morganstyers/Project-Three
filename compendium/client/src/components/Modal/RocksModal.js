@@ -18,21 +18,22 @@ class RocksModal extends React.Component {
   render() {
     return (
       <div>
-      <Button style={{marginLeft: 15}} color="warning" onClick={this.toggle}>
-        {this.props.buttonLabel}
-      </Button>
-      <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-        <ModalHeader toggle={this.toggle}>Minerals</ModalHeader>
-        <ModalBody>
-<RockGallery/>
+        <Button style={{ marginLeft: 15 }} color="warning" onClick={this.toggle}>
+          {this.props.buttonLabel}
+        </Button>
+        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+          <ModalHeader toggle={this.toggle}>Rocks</ModalHeader>
+          <ModalBody>
+            <RockGallery></RockGallery>
           </ModalBody>
           <ModalFooter>
+            <Button id="submit" color="primary" onClick={this.toggle}>
+              Submit </Button>
             <Button id="close" color="secondary" onClick={this.toggle}>
-              Cancel
-            </Button>
+              Close </Button>
           </ModalFooter>
         </Modal>
-        </div>
+      </div>
     );
   }
 }

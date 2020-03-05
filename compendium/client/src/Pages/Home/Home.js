@@ -1,17 +1,9 @@
 import React from "react";
-import Jumbotron from "../components/Jumbotron/index";
-import './hStyle.css';
+import Jumbotron from "../../components/Jumbotron/index";
 import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom";
-import { Button } from 'reactstrap';
-import AddCollection from '../components/Modal/addCollection';
-import ButtonToolbar from 'react-bootstrap/ButtonToolbar'
 
 const Home = () => {
-  const styles = {
-    fontFamily: "sans-serif",
-    
-  };
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -38,17 +30,9 @@ const Home = () => {
         </div>
       </nav>
       <Jumbotron />
-      <h2> See your existing collections or create a new one.</h2>
-      <br/>
-      <div style={styles}>
-      <ButtonToolbar style={{marginLeft: 500, textAlign:"center"}}>
-  <Button style={{margin:2}} href='/Collections'>View Your Collections</Button>
-    <AddCollection id="cc" buttonLabel="Create Collection" />
-    </ButtonToolbar>
-
+     
 
 <hr/>
-      </div>
       {/* <Input /> */}
       <Typography variant="body2" color="textSecondary" align="center">
         {'Copyright © '}

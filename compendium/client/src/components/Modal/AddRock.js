@@ -15,7 +15,7 @@ function MyVerticallyCenteredModal(props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-           Add New Mineral
+           Add New Rock
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -91,13 +91,13 @@ function MyVerticallyCenteredModal(props) {
       </Modal>
     );
   }
-  function AddMineral() {
+  function AddRock() {
     const [modalShow, setModalShow] = React.useState(false);
   
     return (
       <ButtonToolbar>
         <Button style={{marginLeft: 100}} variant="warning" onClick={() => setModalShow(true)}>
-     Add New Mineral
+     Add New Rock
         </Button>
   
         <MyVerticallyCenteredModal
@@ -110,4 +110,4 @@ function MyVerticallyCenteredModal(props) {
   
 
 
-  export default AddMineral;
+  export default AddRock;
